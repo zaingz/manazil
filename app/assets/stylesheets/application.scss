@@ -5,6 +5,16 @@
 $green-color: #97c13c;
 $orange-color: #f7941d;
 $grey-color: lighten(#CCC, 10%);
+@font-face {
+  font-family: 'lato-Reg';
+  src: font-url('Lato-Regular.ttf');
+
+}
+
+body{
+  font-family: lato-Reg;
+}
+
 
 @import "navbar";
 @import "footer";
