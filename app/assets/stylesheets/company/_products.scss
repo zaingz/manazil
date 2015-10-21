@@ -15,11 +15,11 @@
       position: relative; top:0;left: 0; width: 100%;
 
       .color{background-color: rgba(0,0,0,0.35); height: 250px;}
-      .icon{background-color: white; height: 117px;
+      .icon{padding: 0;background-color: white; height: 117px;
         .star{color: $green-color}
-        #greeno{color: $green-color}
+        #greeno{color: $green-color; padding: 0}
         .l_icons{padding-top: 25px;}
-        .l_icons>span{margin-right: 20px; font-size: 25px}
+        .l_icons>span{margin-right: 10px; font-size: 25px}
 
       }
       &:hover{opacity: 1}
