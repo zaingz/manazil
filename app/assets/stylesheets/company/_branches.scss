@@ -1,0 +1,17 @@
+.branches{
+  .branch{
+    margin-top: 20px;
+    .map{
+
+      background-color: #3E4B58;
+
+      height: 250px;
+    }
+    h4{color: $green-color; margin-top: 15px;}
+    .col-md-6{
+      padding: 0;
+      .greeno{color: $green-color; }
+    }
+   #border-line{border-left: 3px solid $green-color;padding-left: 10px;margin-bottom: 10px;}
+  }
+}

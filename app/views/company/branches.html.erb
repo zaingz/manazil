@@ -1,0 +1,28 @@
+<%= render 'company/common_top'%>
+
+<div class="container branches">
+  <div class="row">
+    <%6.times do%>
+
+        <div class="col-md-4 branch">
+          <div class="map">
+            <div style="width:100%;overflow:hidden;height:250px;max-width:100%;"><div id="gmap-canvas" style="height:100%; width:100%;max-width:100%;"><iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=Kuwait&key=AIzaSyAN0om9mFmy1QN6Wf54tXAowK4eT0ZUPrU"></iframe></div><a class="embedded-map-html" href="https://www.treat-lice.com" id="grab-map-info">nits removal</a><style>#gmap-canvas img{max-width:none!important;background:none!important;font-size: inherit;}</style></div>
+          </div>
+
+          <h4>Articasa Branch 1</h4>
+          <div class="col-md-6">
+            <p><span class="greeno"><%= fa_icon "map-marker"%></span>&nbsp; Kuwait city</p>
+            <p><span class="greeno"><%= fa_icon "map-marker"%></span>&nbsp; Kuwait city</p>
+            <p><span class="greeno"><%= fa_icon "map-marker"%></span>&nbsp; Kuwait city</p>
+          </div>
+          <div class="col-md-6" id="border-line" >
+            <p><span class="greeno"><%= fa_icon "map-marker"%></span>&nbsp; Kuwait city</p>
+            <p><span class="greeno"><%= fa_icon "map-marker"%></span>&nbsp; Kuwait city</p>
+            <p><span class="greeno"><%= fa_icon "map-marker"%></span>&nbsp; Kuwait city</p>
+          </div>
+        </div>
+
+    <%end%>
+
+  </div>
+</div>

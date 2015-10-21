@@ -1,0 +1,11 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "font-awesome";
+
+$green-color: #97c13c;
+$orange-color: #f7941d;
+$grey-color: lighten(#CCC, 10%);
+
+@import "navbar";
+@import "footer";
+@import "company/index";

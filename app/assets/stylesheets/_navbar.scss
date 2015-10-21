@@ -1,0 +1,19 @@
+.navbar{
+  margin-bottom: 11px;
+}
+.navbar-brand{
+  padding-top: 8px;
+  padding-right: 0px;
+  text-align: center;
+  img{width: 80%;margin: 0 auto;}
+}
+#nav-links{
+  li{text-align: center;font-size: 10px;margin: 0;}
+  li>a{padding-left: 7px;; padding-right: 7px;padding-bottom:1px;padding-top:10px; &:hover{background-color: transparent;}}
+  li>a>img{width: 80%; margin: 0 auto;}
+}
+#nav-links-right{
+  li>a:hover{background-color: transparent;}
+  margin-top: 10px;
+  li>a>img{width: 80%}
+}

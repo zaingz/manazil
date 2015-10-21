@@ -1,0 +1,19 @@
+
+.footer{
+  background-color: darken($green-color, 10%);
+  width: 100%;
+  padding: 20px;
+  .follow{
+    border-radius: 2px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: white;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    .icon{padding-left: 20px;}
+  }
+  .text{
+    color:white;
+    text-align: right;
+  }
+}
