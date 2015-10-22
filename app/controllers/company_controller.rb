@@ -1,5 +1,6 @@
 class CompanyController < ApplicationController
   def index
+
   end
   def services
 
@@ -8,6 +9,9 @@ class CompanyController < ApplicationController
     
   end
   def offers
+
+  end
+  def reviews
 
   end
 end

@@ -13,9 +13,18 @@ $grey-color: lighten(#CCC, 10%);
 
 body{
   font-family: lato-Reg;
+
 }
+.img-circle{border: 4px solid #BBBBBB;}
+
+
+.greeno{
+  color: $green-color;
+}
+
 
 
 @import "navbar";
 @import "footer";
 @import "company/index";
+@import "home/index";

@@ -1,0 +1,9 @@
+@import "offers";
+@import "companies";
+@import "tips";
+
+.top_banner{
+  width: 100%;
+  background-color: $green-color;
+  .line{background-color: white; height: 2px;}
+}

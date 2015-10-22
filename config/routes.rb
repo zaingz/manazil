@@ -3,6 +3,11 @@ Rails.application.routes.draw do
   get 'company/services'
   get 'company/branches'
   get 'company/offers'
+  get 'company/reviews'
+
+  get '/offers' => 'home#offers'
+  get '/companies' => 'home#companies'
+  get '/tips' => 'home#tips'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

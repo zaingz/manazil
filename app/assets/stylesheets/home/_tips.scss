@@ -1,0 +1,27 @@
+.tipo{
+
+ .media {
+   margin-top: 30px;
+   margin-bottom: 30px;
+
+   .img {
+     width: 150px;
+     height: 140px;
+   }
+   .media-body {
+     padding-top: 15px;
+     padding-left: 15px;
+     a{color: #2E2F30}
+     .left-date {
+       font-size: 14px;
+       margin-top: 10px;
+       .icon {
+         margin-right: 20px;
+       }
+     }
+   }
+ }
+
+  .pagination>li>a{color:$green-color}
+  .activeo>a{color: white;background-color: $green-color; }
+}
