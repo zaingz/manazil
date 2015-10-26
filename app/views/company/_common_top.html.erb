@@ -16,12 +16,12 @@
       <div class="col-md-12 ">
         <ul class="nav  navbar-nav">
           <li><a href="#">All</a></li>
-          <li><a href="#"><% image_tag 'wall.png'%>&nbsp; Walls</a></li>
-          <li><a href="#"><% image_tag 'wall.png'%>&nbsp;Bathroom</a></li>
-          <li><a href="#">Insulator</a></li>
-          <li><a href="#">Kitchen</a></li>
-          <li><a href="#">Floor</a></li>
-          <li><a href="#">Door</a></li>
+          <li><a href="#"><%= image_tag 'wall.png'%>&nbsp;&nbsp; Walls</a></li>
+          <li><a href="#"><%= image_tag 'bathroom.png', width:18 %>&nbsp;&nbsp;Bathroom</a></li>
+          <li><a href="#"><%= image_tag 'insulator.png'%>&nbsp;&nbsp;Insulator</a></li>
+          <li><a href="#"><%= image_tag 'kitchen.png'%>&nbsp;&nbsp;Kitchen</a></li>
+          <li><a href="#"><%= image_tag 'flooring.png'%>&nbsp;&nbsp;Floor</a></li>
+          <li><a href="#"><%= image_tag 'door.png', width: 17%>&nbsp;&nbsp;Carpenters & Door</a></li>
         </ul>
       </div>
     </div>
@@ -32,9 +32,9 @@
 <div class="container info">
   <div class="row">
     <div class="col-md-12 content">
-      <div class="col-md-2 img"><img src="http://ecx.images-amazon.com/images/I/81MnrvdXuuL._SX425_.jpg" alt=""></div>
+      <div class="col-md-2 img"><%= image_tag 'arti_logo.png'%></div>
       <div class="col-md-6">
-        <h1 style="margin-top: 0">Artecasa</h1>
+        <h1 style="margin-top: 0; margin-bottom: 30px;">Artecasa</h1>
         <div style="display:flex">
           <ul class="list">
             <li><%= fa_icon "map-marker" %>&nbsp; Shuwaikh industrrial area, Kuwait</li>
