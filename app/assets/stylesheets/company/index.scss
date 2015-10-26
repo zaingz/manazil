@@ -26,6 +26,7 @@
     li{margin-left: 0.9%; margin-right: 0.9%; margin-top: 10px; width: 260px; border: 3px solid white;}
 
     li>a{color: white;&:hover{color: white;background-color: $orange-color}}
+    .active{background-color: white; color: $orange-color;}
   }
 }
 
