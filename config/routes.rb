@@ -8,6 +8,9 @@ Rails.application.routes.draw do
   get '/offers' => 'home#offers'
   get '/companies' => 'home#companies'
   get '/tips' => 'home#tips'
+  get '/tips/:id' => 'home#tips_detail'
+  get '/rules' => 'home#rules'
+  get '/companies/create' =>  'home#companies_create'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

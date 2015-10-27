@@ -14,4 +14,10 @@ class CompanyController < ApplicationController
   def reviews
 
   end
+  def rules
+
+  end
+  def companies_create
+
+  end
 end

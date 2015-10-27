@@ -1,0 +1,36 @@
+<%= render 'home/top_banner', title: 'Rules'%>
+<% content_for :title, "Rules" %>
+
+<div class="container rules">
+  <div class="row">
+
+
+
+        <%20.times do |i|%>
+
+          <div class=" line col-md-12">
+            <div class="num col-md-1 text-center"><%= x=i+1 %></div>
+            <div class="text col-md-10">Description of service</div>
+            <div class="toggle col-md-1 text-center">
+              <a style="color: #3E4B58" role="button" data-toggle="collapse" href="<%= "#collapseExample#{i}" %>" aria-expanded="false" aria-controls="collapseExample">
+              <%= fa_icon 'arrow-circle-down'%>
+            </a>
+            </div>
+
+            <div class="col-md-10 col-md-offset-1">
+              <div class="collapse" id="<%= "collapseExample#{i}" %>">
+                <div class="toggle-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aperiam asperiores atque deleniti dolor doloremque enim facilis minima minus molestias nemo, pariatur porro praesentium quos reprehenderit sed, velit veniam vero.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium adipisci alias beatae, dignissimos eos ex expedita molestiae necessitatibus quaerat, quos repellat ullam velit vero voluptas, voluptatibus? Aperiam deleniti quod veniam?
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        <%end%>
+
+
+
+  </div>
+</div>

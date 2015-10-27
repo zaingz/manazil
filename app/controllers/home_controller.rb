@@ -12,4 +12,8 @@ class HomeController < ApplicationController
 
   end
 
+  def tips_detail
+
+  end
+
 end
