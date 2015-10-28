@@ -1,0 +1,41 @@
+.full_img{
+  width: 100%;
+}
+
+.about{
+
+  padding-top: 1%;
+  padding-bottom: 1%;
+  color: $green-color;
+  margin-bottom: 30px;
+  h1{ font-weight: 100}
+}
+.m-button{
+  border-radius: 3px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin: 0 auto;
+  width: 300px;
+  margin-top: 20px;
+  background-color: lighten( #BBBBBB, 20%);
+  color:  #3E4B58;
+  i{font-size: 20px;padding-right: 10px;}
+}
+
+.m-reviews{
+
+  margin-top: 30px;
+  margin-bottom: 30px;
+  .topper-pad{
+    margin-top: 45px;
+  }
+  .arrow{
+   margin-top: 8%;
+    font-size: 20px;
+  }
+
+.review{
+  border-left: 2px solid $green-color;
+}
+
+}

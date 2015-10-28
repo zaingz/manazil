@@ -15,5 +15,11 @@ class HomeController < ApplicationController
   def tips_detail
 
   end
+  def products
+
+  end
+  def templates
+
+  end
 
 end

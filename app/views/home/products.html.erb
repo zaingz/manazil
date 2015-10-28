@@ -1,0 +1,117 @@
+
+<% content_for :title, "Products" %>
+
+<%= image_tag 'artecasa2.jpg', class: "full_img"%>
+
+<div class="container about">
+  <h1 class="text-center">ABOUT <b>MANAZIL</b></h1>
+  <p class="text-center" style="font-size: 15px; line-height: 25px;">From the very beginning, ARTECASA has established itself as a renowned retailer, known for its quality, its artistic expression and its customer service.
+
+    Dreaming of a space synonymous with sleek stylish living, Ala’a Hayat established ARTECASA is 1994.  He wanted to offer classical and trendy products to help create a comfortable and enjoyable personalized space for people in Kuwait.
+
+   </p>
+
+  <div class="text-center m-button">
+    <%= fa_icon 'file-text-o '%>&nbsp; READ MORE ABOUT MANAZIL
+  </div>
+
+</div>
+
+<div class="categories">
+  <div class="container">
+    <h1 class="text-center">Our <b>Categories</b></h1>
+    <div class="row">
+      <div class="col-md-12 ">
+        <ul class="nav  navbar-nav">
+          <li><a class="active" href="#">All</a></li>
+          <li><a href="#"><%= image_tag 'wall.png'%>&nbsp;&nbsp; Walls</a></li>
+          <li><a href="#"><%= image_tag 'bathroom.png', width:15 %>&nbsp;&nbsp;Bathroom</a></li>
+          <li><a href="#"><%= image_tag 'insulator.png', width:15%>&nbsp;&nbsp;Insulator</a></li>
+          <li><a href="#"><%= image_tag 'kitchen.png', width:15%>&nbsp;&nbsp;Kitchen</a></li>
+          <li><a href="#"><%= image_tag 'flooring.png', width:15%>&nbsp;&nbsp;Floor</a></li>
+          <li><a href="#"><%= image_tag 'door.png', width: 15%>&nbsp;&nbsp;Carpenters & Door</a></li>
+
+          <li><a href="#"><%= image_tag 'wall.png'%>&nbsp;&nbsp; Walls</a></li>
+          <li><a href="#"><%= image_tag 'bathroom.png', width:15 %>&nbsp;&nbsp;Bathroom</a></li>
+          <li><a href="#"><%= image_tag 'insulator.png', width:15%>&nbsp;&nbsp;Insulator</a></li>
+          <li><a href="#"><%= image_tag 'kitchen.png', width:15%>&nbsp;&nbsp;Kitchen</a></li>
+          <li><a href="#"><%= image_tag 'flooring.png', width:15%>&nbsp;&nbsp;Floor</a></li>
+          <li><a href="#"><%= image_tag 'door.png', width: 15%>&nbsp;&nbsp;Carpenters & Door</a></li>
+
+          <li><a href="#"><%= image_tag 'wall.png'%>&nbsp;&nbsp; Walls</a></li>
+          <li><a href="#"><%= image_tag 'bathroom.png', width:15 %>&nbsp;&nbsp;Bathroom</a></li>
+          <li><a href="#"><%= image_tag 'insulator.png', width:15%>&nbsp;&nbsp;Insulator</a></li>
+          <li><a href="#"><%= image_tag 'kitchen.png', width:15%>&nbsp;&nbsp;Kitchen</a></li>
+          <li><a href="#"><%= image_tag 'flooring.png', width:15%>&nbsp;&nbsp;Floor</a></li>
+          <li><a href="#"><%= image_tag 'door.png', width: 15%>&nbsp;&nbsp;Carpenters & Door</a></li>
+
+
+
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<div class="container-fluid products">
+  <div class="row">
+    <% 12.times do %>
+        <div class="col-md-3 product clearfix" style="background-image: url(<%= asset_url('product.jpg')%>)">
+
+
+
+          <div class="overlay">
+            <div class="color text-center" style="padding-top: 30%">
+              <span style="color: white; "><%= fa_icon "search 2x"%></span>
+
+            </div>
+            <div class="icon">
+              <div class="col-md-6">
+                <h3>Floor Covering</h3>
+                <p><%= fa_icon "map-marker"%> Shoukat khanam</p>
+                <p class="star"><span><%= fa_icon "star"%></span>&nbsp;<span><%= fa_icon "star"%></span>&nbsp;<span><%= fa_icon "star"%></span>&nbsp;<span><%= fa_icon "star"%></span>&nbsp;<span><%= fa_icon "star"%></span></p>
+              </div>
+              <div class="col-md-6" id="greeno">
+                <h3 class="l_icons pull-right"><span><%= image_tag 'gallery.png'%></span> <span><%= image_tag 'link.png'%></span> <span><%= image_tag 'info.png'%></span><span><%= image_tag 'heart.png'%></span></h3>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+    <%end%>
+  </div>
+</div>
+
+
+<div class="container m-reviews">
+  <div class="col-md-1 arrow greeno text-left topper-pad">
+    <%= fa_icon 'arrow-left'%>
+  </div>
+
+  <div class="col-md-7 review greeno topper-pad">
+    <h3 >User Reiew</h3>
+    <p >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium amet, dolorem expedita neque nesciunt porro reprehenderit sint vitae. Accusamus aliquid cum exercitationem maiores necessitatibus nihil omnis pariatur quasi sunt voluptatem?</p>
+  </div>
+
+  <div class="col-md-3">
+    <div class="thumbnail">
+      <p class="text-center">Very nice and beautifyl</p>
+      <%= image_tag 'home.jpg'%>
+      <div class="caption">
+        <h3 class="greeno">Fiaz Ahmed</h3>
+        <p>Very nice and beautifyl</p>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-1 arrow greeno text-right topper-pad">
+    <%= fa_icon 'arrow-right'%>
+  </div>
+
+
+</div>

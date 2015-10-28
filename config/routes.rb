@@ -6,10 +6,12 @@ Rails.application.routes.draw do
   get 'company/reviews'
 
   get '/offers' => 'home#offers'
+  get '/products' => 'home#products'
   get '/companies' => 'home#companies'
   get '/tips' => 'home#tips'
   get '/tips/:id' => 'home#tips_detail'
   get '/rules' => 'home#rules'
+  get '/templates' => 'home#templates'
   get '/companies/create' =>  'home#companies_create'
 
   # The priority is based upon order of creation: first created -> highest priority.
