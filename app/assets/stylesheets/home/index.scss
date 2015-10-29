@@ -1,14 +1,15 @@
 @import "offers";
-@import "companies";
+@import "top_five_comp";
 @import "tips";
 @import "tips_detail";
 @import "rules";
 @import "companies_create";
 @import "products";
 @import "templates";
+@import "companies";
 
 .top_banner{
   width: 100%;
   background-color: $green-color;
-  .line{background-color: white; height: 2px;}
+  .line{background-color: white; height: 1px;}
 }

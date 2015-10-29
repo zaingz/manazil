@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   get '/offers' => 'home#offers'
   get '/products' => 'home#products'
   get '/companies' => 'home#companies'
+  get '/companies/top' => 'home#top_five_comp'
   get '/tips' => 'home#tips'
   get '/tips/:id' => 'home#tips_detail'
   get '/rules' => 'home#rules'

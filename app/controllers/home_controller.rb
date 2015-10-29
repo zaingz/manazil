@@ -7,6 +7,9 @@ class HomeController < ApplicationController
   def companies
 
   end
+  def top_five_comp
+
+  end
 
   def tips
 

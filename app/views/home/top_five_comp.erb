@@ -1,0 +1,81 @@
+<%= render 'home/top_banner', title: 'Top Five'%>
+<% content_for :title, "Top Companies" %>
+
+<div class="container h-company">
+
+  <% 5.times do |i|%>
+
+  <div class="line_item">
+
+  <div class="row">
+
+    <div class="col-md-4 imgeo ">
+
+      <h1 class="greeno" style="margin-bottom: 20px;"><%= image_tag 'Bars.svg', class: 'baro'%><%= i+=1%>: &nbsp;Artecasa</h1>
+
+      <%= image_tag "home.jpg", class: 'img img-circle pull-right roundo' %>
+    </div>
+
+    <div class="col-md-4 greeno"  style="position: relative; top: 180px;">
+
+      <div style="display: inline-flex"><p style="width: 140px;">Quality:</p>
+
+        <div>
+
+          <p  class="star"><span><%= fa_icon "star"%></span>&nbsp;<span><%= fa_icon "star"%></span>&nbsp;<span><%= fa_icon "star"%></span>&nbsp;<span><%= fa_icon "star"%></span>&nbsp;<span><%= fa_icon "star"%></span></p>
+
+        </div>
+
+      </div>
+
+      <div style="display: inline-flex"><p style="width: 140px;">Customer Service:</p>
+
+        <div  >
+
+          <p  class="star"><span><%= fa_icon "star"%></span>&nbsp;<span><%= fa_icon "star"%></span>&nbsp;<span><%= fa_icon "star"%></span>&nbsp;<span><%= fa_icon "star"%></span>&nbsp;<span><%= fa_icon "star"%></span></p>
+
+        </div>
+
+      </div>
+
+      <div style="display: inline-flex"><p style="width: 140px;">Efficency:</p>
+
+        <div  >
+
+          <p  class="star"><span><%= fa_icon "star"%></span>&nbsp;<span><%= fa_icon "star"%></span>&nbsp;<span><%= fa_icon "star"%></span>&nbsp;<span><%= fa_icon "star"%></span>&nbsp;<span><%= fa_icon "star"%></span></p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+     <div class="col-md-3 col-md-offset-1 sideo text-center" >
+
+      <h2 style="margin-top: 60px;">Want to know more?</h2>
+      <p style="margin-top: 50px;">See what people had to say</p>
+      <button style="margin-top: 50px;margin-bottom: 40px;" class="btn btn-lg btn-default">Click Here</button>
+
+    </div>
+
+
+
+
+  </div>
+
+  <div class="row" style="margin-top: 30px; margin-bottom: 30px;">
+    <div class="col-md-6">
+      <div class="line"></div>
+    </div>
+    <div class="col-md-6">
+      <div class="line"></div>
+    </div>
+
+  </div>
+
+  </div>
+
+  <%end%>
+
+
+</div>

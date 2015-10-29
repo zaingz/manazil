@@ -1,81 +1,78 @@
-<%= render 'home/top_banner', title: 'Top Five'%>
+
 <% content_for :title, "Companies" %>
 
-<div class="container h-company">
+<%= image_tag 'artecasa2.jpg', class: "full_img"%>
 
-  <% 5.times do |i|%>
+<div class="container about">
+  <h1 class="text-center">ABOUT <b>MANAZIL</b></h1>
+  <p class="text-center" style="font-size: 15px; line-height: 25px;">From the very beginning, ARTECASA has established itself as a renowned retailer, known for its quality, its artistic expression and its customer service.
 
-  <div class="line_item">
+    Dreaming of a space synonymous with sleek stylish living, Ala’a Hayat established ARTECASA is 1994.  He wanted to offer classical and trendy products to help create a comfortable and enjoyable personalized space for people in Kuwait.
 
+  </p>
+
+  <div class="text-center m-button">
+    <%= fa_icon 'file-text-o '%>&nbsp; READ MORE ABOUT MANAZIL
+  </div>
+
+</div>
+
+<div class="categories">
+  <div class="container">
+    <h1 class="text-center">Our <b>Categories</b></h1>
+    <div class="row">
+      <div class="col-md-12 ">
+        <ul class="nav  navbar-nav">
+          <li><a class="active" href="#">All</a></li>
+          <li><a href="#"><%= image_tag 'construction.png', width:15%>&nbsp;&nbsp; Constructions</a></li>
+          <li><a href="#"><%= image_tag 'bathroom.png', width:15%>&nbsp;&nbsp; Bathrooms</a></li>
+          <li><a href="#"><%= image_tag 'elevators.png', width:15%>&nbsp;&nbsp; Elevators</a></li>
+          <li><a href="#"><%= image_tag 'real estate.png', width:15%>&nbsp;&nbsp; Real Estate</a></li>
+          <li><a href="#"><%= image_tag 'shutters.png', width:15%>&nbsp;&nbsp; Shutters</a></li>
+          <li><a href="#"><%= image_tag 'pools.png', width:15%>&nbsp;&nbsp; Pools</a></li>
+          <li><a href="#"><%= image_tag 'air conditioning.png', width:15%>&nbsp;&nbsp; Air conditioning</a></li>
+          <li><a href="#"><%= image_tag 'engineering.png', width:15%>&nbsp;&nbsp; Engineering</a></li>
+          <li><a href="#"><%= image_tag 'insulator.png', width:15%>&nbsp;&nbsp; Insulators</a></li>
+          <li><a href="#"><%= image_tag 'carpenter and doors.png', width:15%>&nbsp;&nbsp; Carpenters & Door</a></li>
+          <li><a href="#"><%= image_tag 'paint.png', width:15%>&nbsp;&nbsp; Paint</a></li>
+          <li><a href="#"><%= image_tag 'consulting.png', width:15%>&nbsp;&nbsp; Consulting</a></li>
+          <li><a href="#"><%= image_tag 'wall.png', width:15%>&nbsp;&nbsp; Walls</a></li>
+          <li><a href="#"><%= image_tag 'iron.png', width:15%>&nbsp;&nbsp; Iron</a></li>
+          <li><a href="#"><%= image_tag 'lighting.png', width:15%>&nbsp;&nbsp; Lighting</a></li>
+          <li><a href="#"><%= image_tag 'contracting.png', width:15%>&nbsp;&nbsp; Contracting</a></li>
+          <li><a href="#"><%= image_tag 'flooring.png', width:15%>&nbsp;&nbsp; Flooring</a></li>
+          <li><a href="#"><%= image_tag 'aluminium.png', width:15%>&nbsp;&nbsp; Aluminium</a></li>
+          <li><a href="#"><%= image_tag 'electricity.png', width:15%>&nbsp;&nbsp; Electricity</a></li>
+          <li><a href="#"><%= image_tag 'interior designs.png', width:15%>&nbsp;&nbsp; Interior Design</a></li>
+          <li><a href="#"><%= image_tag 'kitchen.png', width:15%>&nbsp;&nbsp; Kitchens</a></li>
+          <li><a href="#"><%= image_tag 'glass.png', width:15%>&nbsp;&nbsp; Glass</a></li>
+          <li><a href="#"><%= image_tag 'gardening.png', width:10%>&nbsp;&nbsp; Gardening</a></li>
+
+
+
+
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<div class="container companies">
   <div class="row">
-
-    <div class="col-md-4 imgeo ">
-
-      <h1 class="greeno" style="margin-bottom: 20px;"><%= i+=1%>: &nbsp;Artecasa</h1>
-
-      <%= image_tag "home.jpg", class: 'img img-circle pull-right' %>
-    </div>
-
-    <div class="col-md-4 greeno"  style="position: relative; top: 180px;">
-
-      <div style="display: inline-flex"><p style="width: 140px;">Quality:</p>
-
-        <div>
-
-          <p  class="star"><span><%= fa_icon "star"%></span>&nbsp;<span><%= fa_icon "star"%></span>&nbsp;<span><%= fa_icon "star"%></span>&nbsp;<span><%= fa_icon "star"%></span>&nbsp;<span><%= fa_icon "star"%></span></p>
-
+    <% 12.times do %>
+        <div class="col-md-2 indi-comp">
+            <div class="comp-img">
+              <%= image_tag 'arti_logo.png'%>
+            </div>
+          <div class="text">
+            <h4 class="greeno text-center">Artecasa</h4>
+            <p class="text-center greeno"><span><%= fa_icon "star"%></span>&nbsp;<span><%= fa_icon "star"%></span>&nbsp;<span><%= fa_icon "star"%></span>&nbsp;<span><%= fa_icon "star"%></span>&nbsp;<span><%= fa_icon "star"%></span></p>
+            <p class="text-center">168 REVIEWS</p>
+            <p class="text-center greeno"><%= fa_icon 'database'%>&nbsp;&nbsp;|&nbsp;&nbsp;<%= fa_icon 'tag'%>&nbsp;&nbsp;|&nbsp;&nbsp;<%= fa_icon 'picture-o'%>&nbsp;&nbsp;|&nbsp;&nbsp;<%= fa_icon 'ellipsis-h'%></p>
+          </div>
         </div>
-
-      </div>
-
-      <div style="display: inline-flex"><p style="width: 140px;">Customer Service:</p>
-
-        <div  >
-
-          <p  class="star"><span><%= fa_icon "star"%></span>&nbsp;<span><%= fa_icon "star"%></span>&nbsp;<span><%= fa_icon "star"%></span>&nbsp;<span><%= fa_icon "star"%></span>&nbsp;<span><%= fa_icon "star"%></span></p>
-
-        </div>
-
-      </div>
-
-      <div style="display: inline-flex"><p style="width: 140px;">Efficency:</p>
-
-        <div  >
-
-          <p  class="star"><span><%= fa_icon "star"%></span>&nbsp;<span><%= fa_icon "star"%></span>&nbsp;<span><%= fa_icon "star"%></span>&nbsp;<span><%= fa_icon "star"%></span>&nbsp;<span><%= fa_icon "star"%></span></p>
-
-        </div>
-
-      </div>
-
-    </div>
-
-     <div class="col-md-3 col-md-offset-1 sideo text-center" >
-
-      <h2 style="margin-top: 60px;">Want to Know more?</h2>
-      <p style="margin-top: 50px;">See what people had to say</p>
-      <button style="margin-top: 50px;margin-bottom: 40px;" class="btn btn-lg btn-default">Click Here</button>
-
-    </div>
-
-
-
-
+    <%end%>
   </div>
-
-  <div class="row" style="margin-top: 30px; margin-bottom: 30px;">
-    <div class="col-md-6">
-      <div class="line"></div>
-    </div>
-    <div class="col-md-6">
-      <div class="line"></div>
-    </div>
-
-  </div>
-
-  </div>
-
-  <%end%>
-
-
 </div>
