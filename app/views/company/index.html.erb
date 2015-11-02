@@ -3,22 +3,22 @@
 <div class="container-fluid products">
   <div class="row">
     <% 12.times do %>
-    <div class="col-md-3 product clearfix" style="background-image: url(<%= asset_url('product.jpg')%>)">
+    <div class="col-sm-3 col-xs-6 product clearfix" style="background-image: url(<%= asset_url('product.jpg')%>)">
 
 
 
         <div class="overlay">
-          <div class="color text-center" style="padding-top: 30%">
+          <div class="color text-center" style="">
             <span style="color: white; "><%= fa_icon "search 2x"%></span>
 
           </div>
           <div class="icon">
-            <div class="col-md-6">
-              <h3>Floor Covering</h3>
+            <div class="col-sm-6">
+              <h3 id="title">Floor Covering</h3>
               <p><%= fa_icon "map-marker"%> Shoukat khanam</p>
               <p class="star"><span><%= fa_icon "star"%></span>&nbsp;<span><%= fa_icon "star"%></span>&nbsp;<span><%= fa_icon "star"%></span>&nbsp;<span><%= fa_icon "star"%></span>&nbsp;<span><%= fa_icon "star"%></span></p>
             </div>
-            <div class="col-md-6" id="greeno">
+            <div class="col-sm-6" id="greeno">
               <h3 class="l_icons pull-right"><span><%= image_tag 'gallery.png'%></span> <span><%= image_tag 'link.png'%></span> <span><%= image_tag 'info.png'%></span><span><%= image_tag 'heart.png'%></span></h3>
 
             </div>

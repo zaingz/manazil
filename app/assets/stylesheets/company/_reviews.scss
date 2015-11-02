@@ -10,8 +10,126 @@
         .r_info{
           margin-top: 10px;
           text-align: left;
+          .well{padding: 10px;    position: relative;top: -25px;}
+          .name{position: relative; top:-35px; margin-left: 65px;}
           img{width: 60px;}
           .star{margin-left: 22px; color: $green-color}
+        }
+      }
+    }
+  }
+}
+
+
+
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+
+}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .reviews{
+    .line{background-color: $green-color; height: 1px; margin-top: 20px; margin-bottom: 50px; }
+    .latest{
+      h2{color: $green-color;}
+      p{  line-height: 25px}
+      .r_imgs{
+        .review{
+          text-align: center;
+          .img{;width: 150px; height: 150px;}
+          .r_info{
+            margin-top: 10px;
+            text-align: left;
+            img{width: 50px;}
+            .name{position: relative; top:-35px; margin-left: 50px;}
+            .star{margin-left: 5px; color: $green-color}
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+
+  .reviews{
+    .line{background-color: $green-color; height: 1px; margin-top: 20px; margin-bottom: 50px; }
+    .latest{
+      h2{color: $green-color;}
+      p{  line-height: 25px}
+      .r_imgs{
+        .review{
+          text-align: center;
+          .img{;width: 120px; height: 120px;}
+          .r_info{
+            margin-top: 10px;
+            text-align: left;
+            .well{padding: 5px;    position: relative;top: -20px; font-size: 12px;}
+            img{width: 30px;}
+            .name{position: relative; top:-35px; margin-left: 35px; h3{font-size: 16px;}}
+            .star{margin-left: 5px; color: $green-color; font-size: 10px;}
+          }
+        }
+      }
+    }
+  }
+
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+
+
+  .reviews{
+    .line{background-color: $green-color; height: 1px; margin-top: 20px; margin-bottom: 50px; }
+    .latest{
+      h2{color: $green-color;}
+      p{  line-height: 25px}
+      .r_imgs{
+        .review{
+          text-align: center;
+          .img{;width: 150px; height: 150px;}
+          .r_info{
+            margin-top: 10px;
+            text-align: left;
+            display: -webkit-box;
+            .left{width: 25%}
+            .right{width: 75%}
+            .well{padding: 5px;    position: relative;top: -5px; font-size: 12px;}
+            img{width: 40px; margin: 0 auto; text-align: center}
+            .name{position: relative; top:-35px; margin-left: 45px; h3{font-size: 18px;}}
+            .star{margin-left: 5px; color: $green-color; font-size: 14px;}
+          }
+        }
+      }
+    }
+  }
+
+
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+
+  .reviews{
+    .line{background-color: $green-color; height: 1px; margin-top: 20px; margin-bottom: 50px; }
+    .latest{
+      h2{color: $green-color;}
+      p{  line-height: 25px}
+      .r_imgs{
+        .review{
+          text-align: center;
+          .img{;width: 120px; height: 120px;}
+          .r_info{
+            margin-top: 8px;
+            text-align: left;
+            .well{padding: 5px;    position: relative;top: -10px; font-size: 12px; padding-bottom: 5px;}
+            img{width: 60px;}
+            .name{position: relative; top:-35px; margin-left: -8px; h3{font-size: 18px;}}
+            .star{margin-left: 0px;margin-top: 5%; color: $green-color; font-size: 12px;}
+          }
         }
       }
     }

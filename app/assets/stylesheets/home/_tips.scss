@@ -25,3 +25,67 @@
   .pagination>li>a{color:$green-color}
   .activeo>a{color: white;background-color: $green-color; }
 }
+
+
+
+
+
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+
+}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+
+
+
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+
+
+
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+  .tipo{
+    margin-top: 30px;
+    .media {
+      margin-top: 30px;
+      margin-bottom: 30px;
+
+      .img {
+        width: 100px;
+        height: 80px;
+      }
+      .media-body {
+        padding-top: 0;
+        padding-left: 15px;
+        h3{font-size: 19px;}
+        p{margin-top: 35px;}
+        a{color: #2E2F30}
+        .left-date {
+          font-size: 12px;
+          margin-top: 10px;
+          text-align: left !important;
+          float: left;
+          .icon {
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+
+    .pagination>li>a{color:$green-color}
+    .activeo>a{color: white;background-color: $green-color; }
+  }
+}

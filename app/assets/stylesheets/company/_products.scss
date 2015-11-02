@@ -1,11 +1,12 @@
 
+
 .products{
   margin: 0 auto;
   .product{
     margin: 0;
     padding: 0;
-    width: 32.4%;
-
+    width: 32.3%;
+    height: auto;
     margin: 6px;
     background-size: cover;
     .overlay{
@@ -14,17 +15,170 @@
       transition: opacity 0.5s;
       position: relative; top:0;left: 0; width: 100%;
 
-      .color{background-color: rgba(0,0,0,0.35); height: 250px;}
-      .icon{padding: 0;background-color: white; height: 117px;
+      .color{background-color: rgba(0,0,0,0.35); height: 85%; padding-top: 20%;padding-bottom: 20%;}
+      .icon{padding: 0;background-color: white; ;z-index: 2;
+        .col-sm-6{background-color: white; height: 120px;}
         .star{color: $green-color}
         #greeno{color: $green-color; padding: 0}
-        .l_icons{padding-top: 25px;}
-        .l_icons>span{margin-right: 10px; font-size: 25px}
+        .l_icons{}
+        .l_icons>span{margin-right: 10px;img{margin-top: 5px; width: 32px;}}
 
       }
       &:hover{opacity: 1}
     }
 
 
+  }
+}
+
+
+
+
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+
+}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+  .products{
+    margin: 0 auto;
+    .product{
+      margin: 0;
+      padding: 0;
+      width: 32.1%;
+      height: auto;
+      margin: 6px;
+      background-size: cover;
+      .overlay{
+        z-index: 2;
+        opacity: 0;
+        transition: opacity 0.5s;
+        position: relative; top:0;left: 0; width: 100%;
+
+        .color{background-color: rgba(0,0,0,0.35); height: 85%; padding-top: 20%;padding-bottom: 20%;}
+        .icon{padding: 0;background-color: white; ;z-index: 2;
+          .col-sm-6{background-color: white; height: 105px;#title{font-size: 19px;}}
+          .star{color: $green-color}
+          #greeno{color: $green-color; padding: 0}
+          .l_icons{}
+          .l_icons>span{margin-right: 10px;img{margin-top: 5px; width: 28px;}}
+
+        }
+        &:hover{opacity: 1}
+      }
+
+
+    }
+  }
+
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+
+  .products{
+    margin: 0 auto;
+    .product{
+      margin: 0;
+      padding: 0;
+      width: 31.7%;
+
+      margin: 6px;
+      background-size: cover;
+      .overlay{
+        z-index: 2;
+        opacity: 0;
+        transition: opacity 0.5s;
+        position: relative; top:0;left: 0; width: 100%;
+
+        .color{background-color: rgba(0,0,0,0.35); height: 85%; padding-top: 25%;padding-bottom: 25%;}
+        .icon{padding: 0;background-color: white; ;z-index: 2;
+          .col-sm-6{background-color: white; height: 100px;#title{font-size: 15px; }p{font-size: 11px;}}
+          .star{color: $green-color}
+          #greeno{color: $green-color; padding: 0}
+          .l_icons{}
+          .l_icons>span{margin-right: 8px;img{margin-top: 5px; width: 20px;}}
+
+        }
+        &:hover{opacity: 1}
+      }
+
+
+    }
+  }
+
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+
+  .products{
+    margin: 0 auto;
+    .product{
+      margin: 0;
+      padding: 0;
+      width: 48%;
+      float: left;
+      margin: 5px;
+      background-size: cover;
+      .overlay{
+        z-index: 2;
+        opacity:1;
+        transition: opacity 0.5s;
+        position: relative; top:0;left: 0; width: 100%;
+
+        .color{background-color: rgba(0,0,0,0.35); height: 85%; padding-top: 27%;padding-bottom: 27%;}
+        .icon{padding: 0;background-color: white; ;z-index: 2;    display: -webkit-box;
+          .col-sm-6{background-color: white; height: 95px;#title{font-size: 18px; }p{font-size: 12px;}}
+          .star{color: $green-color}
+          #greeno{color: $green-color; padding: 0}
+          .l_icons{}
+          .l_icons>span{margin-right: 14px;img{margin-top: 5px; width: 21px;}}
+
+        }
+        &:hover{opacity: 1}
+      }
+
+
+
+    }
+  }
+
+
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+  .products{
+    margin: 0 auto;
+    .product{
+      margin: 0;
+      padding: 0;
+      width: 100%;
+
+      margin: 5px;
+      background-size: cover;
+      .overlay{
+        z-index: 2;
+        opacity: 1;
+        transition: opacity 0.5s;
+        position: relative; top:0;left: 0; width: 100%;
+
+        .color{background-color: rgba(0,0,0,0.35); height: 85%; padding-top: 27%;padding-bottom: 27%;}
+        .icon{padding: 0;background-color: white; ;z-index: 2;    display: -webkit-box;
+          .col-sm-6{background-color: white; height: 105px;#title{font-size: 19px; }p{font-size: 14px;}}
+          .star{color: $green-color}
+          #greeno{color: $green-color; padding: 0; margin-left: 16%}
+          .l_icons{}
+          .l_icons>span{margin-right: 2.1%; text-align:right; img{margin-top: 5px; width: 22px;}}
+
+        }
+        &:hover{opacity: 1}
+      }
+
+
+    }
   }
 }

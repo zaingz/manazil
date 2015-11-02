@@ -10,7 +10,9 @@
     padding-right: 20px;
     background-color: white;
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-    .icon{padding-left: 12px;
+    .icon{
+      img{width: 15px;}
+      padding-left: 12px;
       padding-right: 12px;
       border-left: 1px solid;}
   }
@@ -19,3 +21,152 @@
     text-align: right;
   }
 }
+
+
+
+
+
+
+
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+
+}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .footer{
+    background-color: darken($green-color, 10%);
+    width: 100%;
+    padding: 20px;
+    .follow{
+      border-radius: 2px;
+      padding: 10px;
+      padding-left: 20px;
+      padding-right: 20px;
+      background-color: white;
+      width: 40% !important;
+      box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+      .icon{padding-left: 12px;
+        padding-right: 12px;
+        width: 40% !important;
+        border-left: 1px solid;}
+    }
+    .text{
+      margin-left: 0%;
+      color:white;
+      text-align: right;
+    }
+  }
+
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+  .footer{
+    background-color: darken($green-color, 10%);
+    width: 100%;
+    padding: 20px;
+    .follow{
+      border-radius: 2px;
+      padding: 10px;
+      padding-left: 20px;
+      padding-right: 20px;
+      background-color: white;
+      width: 40% !important;
+      box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+
+      h4{font-size: 15px;}
+      .icon{
+        img{width: 12px;}
+        padding-left: 7px;
+        padding-right: 7px;
+
+        border-left: 1px solid;}
+    }
+    .text{
+      margin-left: 0%;
+      color:white;
+      width: 60%;
+      text-align: right;
+    }
+  }
+
+
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+
+  .footer{
+    background-color: darken($green-color, 10%);
+    width: 100%;
+    padding: 20px;
+    .follow{
+      border-radius: 2px;
+      padding: 10px;
+      padding-left: 20px;
+      padding-right: 20px;
+      background-color: white;
+      width: 100% !important;
+      box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+
+      h4{font-size: 18px;}
+      .first{margin-left: 18%}
+      .icon{
+
+        img{width: 20px;}
+        padding-left: 2.5%;
+        padding-right: 2.5%;
+
+        border-left: 1px solid;}
+    }
+    .text{
+      margin-top: 40px;
+      margin-left: 0%;
+      color:white;
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+
+  .footer{
+    background-color: darken($green-color, 10%);
+    width: 100%;
+    padding: 20px;
+    .follow{
+      border-radius: 2px;
+      padding: 10px;
+      padding-left: 20px;
+      padding-right: 20px;
+      background-color: white;
+      width: 100% !important;
+      box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+
+      h4{font-size: 15px;}
+      .first{margin-left: 5%}
+      .icon{
+
+        img{width: 16px;}
+        padding-left: 2%;
+        padding-right: 2%;
+
+        border-left: 1px solid;}
+    }
+    .text{
+      margin-top: 30px;
+      margin-left: 0%;
+      color:white;
+      width: 100%;
+      text-align: center;
+     p{ margin-bottom: 10px;};
+    }
+  }
+
+}
+
