@@ -130,7 +130,7 @@
         position: relative; top:0;left: 0; width: 100%;
 
         .color{background-color: rgba(0,0,0,0.35); height: 85%; padding-top: 27%;padding-bottom: 27%;}
-        .icon{padding: 0;background-color: white; ;z-index: 2;    display: -webkit-box;
+        .icon{padding: 0;background-color: white; ;z-index: 2;    display: flex; display: -webkit-flex;
           .col-sm-6{background-color: white; height: 95px;#title{font-size: 18px; }p{font-size: 12px;}}
           .star{color: $green-color}
           #greeno{color: $green-color; padding: 0}
@@ -167,7 +167,7 @@
         position: relative; top:0;left: 0; width: 100%;
 
         .color{background-color: rgba(0,0,0,0.35); height: 85%; padding-top: 27%;padding-bottom: 27%;}
-        .icon{padding: 0;background-color: white; ;z-index: 2;    display: -webkit-box;
+        .icon{padding: 0;background-color: white; ;z-index: 2;    display: flex; display: -webkit-flex;
           .col-sm-6{background-color: white; height: 105px;#title{font-size: 19px; }p{font-size: 14px;}}
           .star{color: $green-color}
           #greeno{color: $green-color; padding: 0; margin-left: 16%}
