@@ -1,0 +1,53 @@
+<%= render 'home/top_banner', title: 'FAQ'%>
+<% content_for :title, "FAQ" %>
+
+
+<div class="container faq">
+
+  <div class="row">
+
+    <div class="col-md-6 col-sm-6 faq-side">
+
+      <%7.times do %>
+      <div class="topico">
+        <h4>WORKSPACE</h4>
+        <%3.times do |i|%>
+            <a class="question" role="" data-toggle="collapse" href="#<%= "collapseExamplea#{i}"%>" aria-expanded="false" aria-controls="collapseExample">
+              What is good and clean way to manage Workspace?
+            </a>
+            <div class="collapse" id="<%= "collapseExamplea#{i}"%>">
+              <div class="well">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda autem debitis delectus dicta hic minima molestias odit rerum sapiente tempore.</p>
+              </div>
+            </div>
+            <br/>
+        <%end%>
+      </div>
+      <%end%>
+
+    </div>
+
+    <div class="col-md-6 col-sm-6 faq-side">
+      <%7.times do %>
+          <div class="topico">
+            <h4>WORKSPACE</h4>
+            <%3.times do |i|%>
+                <a class="question" role="" data-toggle="collapse" href="#<%= "collapseExample#{i}"%>" aria-expanded="false" aria-controls="collapseExample">
+                  What is good and clean way to manage Workspace?
+                </a>
+                <div class="collapse" id="<%= "collapseExample#{i}"%>">
+                  <div class="well">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda autem debitis delectus dicta hic minima molestias odit rerum sapiente tempore.</p>
+                  </div>
+                </div>
+                <br/>
+            <%end%>
+          </div>
+      <%end%>
+    </div>
+
+  </div>
+
+</div>
+
+

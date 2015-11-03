@@ -19,3 +19,55 @@
   margin-top: 15px;
   li>a>img{width: 80%}
 }
+
+
+
+
+
+
+
+
+
+
+
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+
+}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+
+
+
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+
+  .navbar-brand{
+    padding-top: 0px;
+    padding-right: 0px;
+    text-align: center;
+    img{width: 85px;margin: 0 auto;top: -10px;
+      position: relative;}
+  }
+
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+  .navbar-brand{
+    padding-top: 0px;
+    padding-right: 0px;
+    text-align: center;
+    img{width: 75px;margin: 0 auto;top: -5px;
+      position: relative;}
+  }
+}

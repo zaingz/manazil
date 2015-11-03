@@ -25,4 +25,15 @@ class HomeController < ApplicationController
 
   end
 
+  def faq
+
+  end
+
+  def terms
+
+  end
+  def contact
+
+  end
+
 end
