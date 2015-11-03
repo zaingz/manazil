@@ -90,8 +90,11 @@
   #nav-links{
     margin-top: 2%;
     display: flex;
+    display: -webkit-flex; /* Safari */
     flex-wrap:         wrap;
+    -webkit-flex-wrap: wrap; /* Safari */
     justify-content:         center;
+    -webkit-justify-content: center;
     li{text-align: center;font-size: 10px;margin: 0;}
     li>a{padding-left: 6px;; padding-right: 6px;padding-bottom:1px;padding-top:5px; &:hover{background-color: transparent;}}
     li>a>img{width: 53px; margin: 0 auto;-webkit-transition: .3s ease-in-out;
