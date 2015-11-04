@@ -81,8 +81,8 @@
     margin-bottom: 30px;
     .line{
       margin-top: 10px;
-      padding:25px;
-      border-bottom: 0px solid #CCC;
+      padding:22px;
+      border-bottom: 1px solid #CCC;
       .toggle-text{
         margin-top: 40px;
         .form-line{
@@ -92,7 +92,7 @@
           .summary{font-weight: 100; font-size: 13px; }
           .imga{width: 100%; background-color: #3E4B58; height: 80px;}
           .imga-thumb{ background-color: #3E4B58; height: 95px; width: 110px; margin-right: 20px; }
-          .button{width: 100%; height: 30px; background-color: $green-color; color: white; margin-top: 20px;    padding-top: 5px; font-weight: 700}
+          .button{width: 100%; height: 35px; background-color: $green-color; color: white; margin-top: 20px;    padding-top: 7px; font-weight: 700}
           .map{width:100%; height: 200px;  background-color: #3E4B58; }
 
         }
@@ -111,7 +111,9 @@
     .line{
       margin-top: 10px;
       padding: 05px;
-      border-bottom: 0px solid #CCC;
+      padding-bottom: 23px;
+      border-bottom: 1px solid #CCC;
+      .toggle{width: 2%; padding: 0}
       .toggle-text{
         margin-top: 40px;
         .form-line{

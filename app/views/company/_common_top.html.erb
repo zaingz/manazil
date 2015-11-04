@@ -54,11 +54,11 @@
     <div class="col-sm-12 tabs">
 
       <ul id="moz">
-        <li><a href="/company/index">  <%= fa_icon "tag"%>&nbsp;&nbsp;Products </a></li>
-        <li><a href="/company/services"><%= fa_icon "briefcase"%>&nbsp;&nbsp;Services</a></li>
-        <li><a href="/company/offers"><%= image_tag 'offers.png', width: 15%>&nbsp;&nbsp;Offers</a></li>
-        <li><a href="/company/reviews"> <%= fa_icon "star"%>&nbsp;&nbsp;Reviews</a></li>
-        <li><a href="/company/branches"><%= image_tag 'brances.png', width: 15%>&nbsp;&nbsp;Branches</a></li>
+        <li class="<%= active==1 ? 'active' : nil%>"><a  href="/company/index">  <%= fa_icon "tag"%>&nbsp;&nbsp;Products </a></li>
+        <li class="<%= active==2 ? 'active' : nil%>"><a  href="/company/services"><%= fa_icon "briefcase"%>&nbsp;&nbsp;Services</a></li>
+        <li class="<%= active==3 ? 'active' : nil%>"><a  href="/company/offers"><%= image_tag 'offers.png', width: 15%>&nbsp;&nbsp;Offers</a></li>
+        <li class="<%= active==4 ? 'active' : nil%>"><a  href="/company/reviews"> <%= fa_icon "star"%>&nbsp;&nbsp;Reviews</a></li>
+        <li class="<%= active==5 ? 'active' : nil%>"><a  href="/company/branches"><%= image_tag 'brances.png', width: 15%>&nbsp;&nbsp;Branches</a></li>
       </ul>
 
     </div>
