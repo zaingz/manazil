@@ -16,3 +16,22 @@
   background-color: $green-color;
   .line{background-color: white; height: 1px;}
 }
+
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+
+  .top_banner{
+    width: 100%;
+    background-color: $green-color;
+    padding-top: 10px;
+    .line{background-color: white; height: 1px;}
+  }
+
+
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+
+}

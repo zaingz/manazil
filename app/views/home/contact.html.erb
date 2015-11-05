@@ -1,54 +1,69 @@
 <%= render 'home/top_banner', title: 'Contact Us'%>
 <% content_for :title, "Contact Us" %>
 
-<div class="container contact-head">
 
-  <div class="row">
-    <div class="col-md-12 text-center">
-      <h3>WE WOULD LIKE TO HEAR FROM YOU</h3>
-      <div class="col-md-10 col-md-offset-1 text-center">
-        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, aliquam asperiores assumenda at commodi cupiditate deleniti fugit maxime nam nisi placeat possimus quod recusandae repellendus tempora! Deserunt ducimus minima ullam.</p>
-      </div>
-
-    </div>
-
-  </div>
-  <hr/>
-</div>
 
 <div class="container">
   <div class="row">
-    <div class="col-md-8 contact-form">
-      <h4>CONTACT FORM</h4>
-      <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos dolore esse expedita magnam minus mollitia, nihil nobis perspiciatis quidem sed similique unde vel velit. Amet, aspernatur illum! Asperiores ea, quos?</p>
-      <form class="col-md-8">
-        <div class="form-group">
-          <label for="inputEmail3">FULL NAME <br><span class="text-muted summary">First and Last name</span></label>
+    <div class="col-md-9 contact-form">
 
-          <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
-        </div>
-        <div class="form-group">
-          <label for="inputEmail3">FULL NAME <br><span class="text-muted summary">First and Last name</span></label>
 
-          <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
-        </div>
+
+
+
+      <form class="form-horizontal">
 
         <div class="form-group">
-          <label for="inputEmail3">FULL NAME <br><span class="text-muted summary">First and Last name</span></label>
-
-          <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+          <label for="inputEmail3" class="col-sm-3 control-label" style="text-align: left">FULL NAME <br><span class="text-muted summary">First and last name</span></label>
+          <div class="col-sm-8">
+            <input type="email" class="form-control" id="inputEmail3" placeholder="Enter your full name">
+          </div>
         </div>
+
+
+        <div class="form-group">
+          <label for="inputEmail3" class="col-sm-3 control-label" style="text-align: left">EMAIL ADDRESS <br><span class="text-muted summary">Verified email address</span></label>
+          <div class="col-sm-8">
+            <input type="email" class="form-control" id="inputEmail3" placeholder="example@domain.com">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="inputEmail3" class="col-sm-3 control-label" style="text-align: left">PHONE NUMBER <br><span class="text-muted summary">Include your area code</span></label>
+          <div class="col-sm-8">
+            <input type="email" class="form-control" id="inputEmail3" placeholder="Phone number (optional)">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="inputEmail3" class="col-sm-3 control-label" style="text-align: left">SUBJECT <br><span class="text-muted summary">Title about topic</span></label>
+          <div class="col-sm-8">
+            <input type="email" class="form-control" id="inputEmail3" placeholder="Subject">
+          </div>
+        </div>
+
+
+        <div class="form-group">
+          <label for="inputEmail3" class="col-sm-3 control-label" style="text-align: left">Description <br><span class="text-muted summary">Message Details</span></label>
+          <div class="col-sm-8">
+            <input type="email" class="form-control message"  placeholder="">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="inputEmail3" class="col-sm-3 control-label" style="text-align: left"></label>
+          <div class="col-sm-8">
+            <div class="button text-center">SUBMIT</div>
+          </div>
+        </div>
+
+
+
+
       </form>
-      <form class="col-md-12">
-        <div class="form-group">
-          <label for="inputEmail3">FULL NAME <br><span class="text-muted summary">First and Last name</span></label>
-
-          <input type="email" class="form-control message" id="exampleInputEmail1" placeholder="">
-        </div>
 
 
-        <div class="button text-center">SEND</div>
-        </form>
+
 
 
 
@@ -56,21 +71,15 @@
 
     </div>
 
-    <div class="col-md-4 contact-details">
-      <div class="block">
-        <label>OUR LOCATION</label>
-        <p class="text-muted">102, Shukwait Industrial Area, <br> Kuwait</p>
-      </div>
+    <div class="col-md-3 contact-details">
+
       <div class="block">
         <label>CONTACT INFORMATION</label>
-        <p class="text-muted">Email: &nbsp; &nbsp; &nbsp; &nbsp; info@manazil.com</p>
-        <p class="text-muted">Phone: &nbsp; &nbsp; &nbsp; &nbsp; +982565 445 22</p>
-        <p class="text-muted">Fax: &nbsp; &nbsp; &nbsp; &nbsp; +982565 445 22</p>
+        <p class="text-muted"><%= fa_icon 'map-marker', class: 'greeno'%>&nbsp;&nbsp;&nbsp;&nbsp; Location: &nbsp; info@manazil.com</p>
+        <p class="text-muted"><%= fa_icon 'envelope', class: 'greeno'%>&nbsp;&nbsp;&nbsp;&nbsp; Email: &nbsp; +982565 445 22</p>
+        <p class="text-muted"><%= fa_icon 'phone', class: 'greeno'%>&nbsp;&nbsp;&nbsp;&nbsp;Phone: &nbsp;  +982565 445 22</p>
       </div>
-      <div class="block">
-        <label>OUR LOCATION</label>
-        <p class="text-muted">102, Shukwait Industrial Area, <br> Kuwait</p>
-      </div>
+
     </div>
 
 
