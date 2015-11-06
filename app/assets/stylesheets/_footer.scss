@@ -11,9 +11,13 @@
     background-color: white;
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
     .icon{
-      img{width: 15px;}
-      padding-left: 12px;
-      padding-right: 12px;
+      svg{width: 25px; position: relative;
+        top: 5px;
+      &:hover{cursor: pointer ;path{fill:$green-color}}
+      }
+      padding-left: 7px;
+      padding-right: 7px;
+
       border-left: 1px solid;}
   }
   .text{
@@ -48,8 +52,13 @@
       background-color: white;
       width: 40% !important;
       box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-      .icon{padding-left: 12px;
-        padding-right: 12px;
+      .icon{
+
+        svg{width: 20px; position: relative;
+          top: 5px;}
+
+        padding-left: 7px;
+        padding-right: 7px;
         width: 40% !important;
         border-left: 1px solid;}
     }
@@ -79,7 +88,8 @@
 
       h4{font-size: 15px;}
       .icon{
-        img{width: 12px;}
+        svg{width: 20px; position: relative;
+          top: 5px;}
         padding-left: 7px;
         padding-right: 7px;
 
@@ -113,10 +123,11 @@
       box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 
       h4{font-size: 18px;}
-      .first{margin-left: 18%}
+      .first{margin-left: 10%}
       .icon{
 
-        img{width: 20px;}
+        svg{width: 20px; position: relative;
+          top: 5px;}
         padding-left: 2.5%;
         padding-right: 2.5%;
 
@@ -149,15 +160,17 @@
       width: 100% !important;
       box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 
-      h4{font-size: 15px;}
-      .first{margin-left: 5%; margin-top: 4px; color: lighten(#2E2F30,2%); font-size: 16px;}
+      h4{font-size: 13px;}
+      .first{margin-left: 1%; margin-top: 4px; color: lighten(#2E2F30,2%); font-size: 16px;}
       .icon{
 
-        img{width: 16px;}
-        padding-left: 2%;
-        padding-right: 2%;
+        svg{width: 18px; position: relative;
+          top: 3px;}
+        padding-left: 0.5%;
+        padding-right: 0.5%;
+        border-left: none;
 
-        border-left: 1px solid;}
+       }
     }
     .text{
       margin-top: 30px;
