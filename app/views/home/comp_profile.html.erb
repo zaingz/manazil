@@ -1,0 +1,235 @@
+<%= render 'home/top_banner', title: 'Company Profile'%>
+<% content_for :title, "Company Profile" %>
+
+
+
+<div class="container comapany_create">
+  <div class="row">
+
+
+
+
+    <div class=" line col-md-12">
+      <div class="num col-md-1 col-xs-1 text-center">1</div>
+      <div class="text col-md-10  col-xs-10">Update Profile</div>
+      <div class="toggle col-md-1  col-xs-1 text-center">
+        <a style="color: #3E4B58" role="button" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+          <%= fa_icon 'caret-down'%>
+        </a>
+      </div>
+
+
+
+
+
+
+
+
+
+      <div class="col-md-12 ">
+        <div class="collapse" id="collapseExample">
+          <div class="toggle-text">
+            <p style="margin-bottom: 30px;">Update you profile details<a href="#" class="greeno"></a></p>
+
+            <div class="col-md-12 form-line">
+
+              <form class="form-horizontal">
+                <div class="form-group">
+                  <label for="inputEmail3" class="col-sm-2 control-label" style="text-align: left">FULL NAME <br><span class="text-muted summary">First and last name</span></label>
+                  <div class="col-sm-10">
+                    <input type="email" class="form-control" id="inputEmail3" placeholder="Enter your full name">
+                  </div>
+                </div>
+
+                <hr/>
+
+                <div class="form-group">
+                  <label for="inputEmail3" class="col-sm-2 control-label" style="text-align: left">USERNAME <br><span class="text-muted summary">Enter a username</span></label>
+                  <div class="col-sm-10">
+                    <input type="email" class="form-control" id="inputEmail3" placeholder="Enter your username">
+                  </div>
+                </div>
+                <hr/>
+
+
+                <div class="form-group">
+                  <label for="inputEmail3" class="col-sm-2 control-label" style="text-align: left">PHONE NUMBER<br><span class="text-muted summary">Include area code</span></label>
+                  <div class="col-sm-10">
+                    <input type="email" class="form-control" id="inputEmail3" placeholder="Enter your phone number">
+                  </div>
+                </div>
+                <hr/>
+                <div class="form-group">
+                  <label for="inputEmail3" class="col-sm-2 control-label" style="text-align: left">PROFILE PICTURE <br><span class="text-muted summary">Maximum size 5MB</span></label>
+                  <div class="col-sm-2">
+                    <div class="imga"></div>
+                    <div class="button text-center">UPLOAD</div>
+                  </div>
+                </div>
+                <hr/>
+                <div class="form-group">
+                  <label for="inputEmail3" class="col-sm-2 control-label" style="text-align: left">PASSWORD <br><span class="text-muted summary">Minimum 8 characters</span></label>
+                  <div class="col-sm-10">
+                    <input type="email" class="form-control" id="inputEmail3" placeholder="Enter your password">
+                  </div>
+                </div>
+                <hr/>
+                <div class="form-group">
+                  <label for="inputEmail3" class="col-sm-2 control-label" style="text-align: left">RETYPE PASSWORD <br><span class="text-muted summary">Same as above</span></label>
+                  <div class="col-sm-10">
+                    <input type="email" class="form-control" id="inputEmail3" placeholder="Enter your password again">
+                  </div>
+                </div>
+                <hr/>
+
+                <div class="form-group">
+                  <label for="inputEmail3" class="col-sm-2 control-label" style="text-align: left"></label>
+                  <div class="col-sm-2">
+
+                    <div class="button text-center">SUBMIT</div>
+                  </div>
+                </div>
+
+
+              </form>
+
+
+
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!--
+    Second line shit start here-->
+
+    <div class=" line col-md-12">
+      <div class="num col-md-1  col-xs-1 text-center">2</div>
+      <div class="text col-md-10 col-xs-10">Update Company</div>
+      <div class="toggle col-md-1 col-xs-1 text-center">
+        <a style="color: #3E4B58" role="button" data-toggle="collapse" href="#collapseExample2" aria-expanded="false" aria-controls="collapseExample">
+          <%= fa_icon 'caret-down'%>
+        </a>
+      </div>
+
+      <div class="col-md-12 ">
+        <div class="collapse" id="collapseExample2">
+          <div class="toggle-text">
+
+
+            <div class="col-md-12 form-line">
+
+              <form class="form-horizontal">
+
+                <div class="form-group">
+                  <label for="inputEmail3" class="col-sm-2 control-label" style="text-align: left">PLACE NAME <br><span class="text-muted summary">Keep it short and clear</span></label>
+                  <div class="col-sm-10">
+                    <input type="email" class="form-control" id="inputEmail3" placeholder="Enter name of your place">
+                  </div>
+                </div>
+
+                <hr/>
+
+                <div class="form-group">
+                  <label for="inputEmail3" class="col-sm-2 control-label" style="text-align: left">LOCATION <br><span class="text-muted summary">Your place's address</span></label>
+                  <div class="col-sm-10">
+                    <input type="email" class="form-control" id="inputEmail3" placeholder="Enter address of your place">
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="inputEmail3" class="col-sm-2 control-label" style="text-align: left"></label>
+                  <div class="col-sm-10">
+                    <div class="map"></div>
+                  </div>
+                </div>
+                <hr/>
+
+                <div class="form-group">
+                  <label for="inputEmail3" class="col-sm-2 control-label" style="text-align: left">PHOTOS<br><span class="text-muted summary">Select one as your feature image</span></label>
+                  <div class="col-sm-10" style="display: flex">
+
+
+                    <div class="imga-thumb">
+
+                      <div class="radio" style="   ">
+                        <label>
+                          <input type="radio" name="blankRadio" id="blankRadio1" value="option1" aria-label="...">
+                        </label>
+                      </div>
+
+                    </div>
+
+                    <div class="imga-thumb">
+                      <div class="radio">
+                        <label>
+                          <input type="radio" name="blankRadio" id="blankRadio1" value="option1" aria-label="...">
+                        </label>
+                      </div>
+                    </div>
+                    <div class="imga-thumb">
+                      <div class="radio" >
+                        <label>
+                          <input type="radio" name="blankRadio" id="blankRadio1" value="option1" aria-label="...">
+                        </label>
+                      </div>
+                    </div>
+                    <div class="imga-thumb">
+                      <div class="radio" >
+                        <label>
+                          <input type="radio" name="blankRadio" id="blankRadio1" value="option1" aria-label="...">
+                        </label>
+                      </div>
+                    </div>
+
+
+                  </div>
+                </div>
+
+                <hr/>
+
+                <div class="form-group">
+                  <label for="inputEmail3" class="col-sm-2 control-label" style="text-align: left">VIDEO<br><span class="text-muted summary">Introduce your place</span></label>
+                  <div class="col-sm-10">
+                    <input type="email" class="form-control" id="inputEmail3" placeholder="Link of your video">
+                  </div>
+                </div>
+                <hr/>
+                <div class="form-group">
+                  <label for="inputEmail3" class="col-sm-2 control-label" style="text-align: left">DESCRIPTION<br><span class="text-muted summary">Ideally 3 short paragraphs</span></label>
+                  <div class="col-sm-10">
+                    <input type="email" class="form-control" id="inputEmail3" placeholder="Enter your company description">
+                  </div>
+                </div>
+                <hr/>
+
+                <div class="form-group">
+                  <label for="inputEmail3" class="col-sm-2 control-label" style="text-align: left"></label>
+                  <div class="col-sm-2">
+
+                    <div class="button text-center">SUBMIT</div>
+                  </div>
+                </div>
+
+
+              </form>
+
+
+
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+
+  </div>
+</div>

@@ -1,0 +1,38 @@
+<%= render 'home/top_banner', title: 'Form'%>
+<% content_for :title, "Form" %>
+
+
+<div class="container formigo">
+
+  <div class="row">
+    <div class="col-md-8 text">
+
+      <label>CONTACT FORM</label>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, at illum ipsam molestias mollitia nesciunt omnis pariatur praesentium ratione rem. Culpa, id perferendis quisquam recusandae repudiandae sapiente sequi tempore. Eligendi.</p>
+
+    </div>
+  </div>
+
+
+  <div class="row form-box-big">
+
+
+    <% 18.times do %>
+
+    <div class="col-sm-6">
+
+      <div class="form-group">
+        <label for="exampleInputEmail1">Name</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+      </div>
+
+    </div>
+
+        <%end%>
+
+  </div>
+
+
+  <div class="col-xs-2 col-sm-1 button text-center">SUMBIT</div>
+
+</div>

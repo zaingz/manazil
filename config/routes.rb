@@ -11,11 +11,15 @@ Rails.application.routes.draw do
   get '/companies/top' => 'home#top_five_comp'
   get '/tips' => 'home#tips'
   get '/faq' => 'home#faq'
+  get '/faq/:name' => 'home#faq_name'
   get '/terms' => 'home#terms'
   get '/contact' => 'home#contact'
   get '/tips/:id' => 'home#tips_detail'
   get '/rules' => 'home#rules'
+  get '/form' => 'home#form'
   get '/templates' => 'home#templates'
+  get '/company/profile' => 'home#comp_profile'
+  get '/user/profile' => 'home#user_profile'
   get '/companies/create' =>  'home#companies_create'
 
   # The priority is based upon order of creation: first created -> highest priority.

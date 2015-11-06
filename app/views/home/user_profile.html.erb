@@ -1,0 +1,168 @@
+<%= render 'home/top_banner', title: 'User Profile'%>
+<% content_for :title, "User Profile" %>
+
+
+
+
+
+<div class="container comapany_create">
+  <div class="row">
+
+
+
+
+    <div class=" line col-md-12">
+      <div class="num col-md-1 col-xs-1 text-center">1</div>
+      <div class="text col-md-10  col-xs-10">Update Profile</div>
+      <div class="toggle col-md-1  col-xs-1 text-center">
+        <a style="color: #3E4B58" role="button" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+          <%= fa_icon 'caret-down'%>
+        </a>
+      </div>
+
+
+
+
+
+
+
+
+
+      <div class="col-md-12 ">
+        <div class="collapse" id="collapseExample">
+          <div class="toggle-text">
+            <p style="margin-bottom: 30px;">Update you profile details<a href="#" class="greeno"></a></p>
+
+            <div class="col-md-12 form-line">
+
+              <form class="form-horizontal">
+                <div class="form-group">
+                  <label for="inputEmail3" class="col-sm-2 control-label" style="text-align: left">FULL NAME <br><span class="text-muted summary">First and last name</span></label>
+                  <div class="col-sm-10">
+                    <input type="email" class="form-control" id="inputEmail3" placeholder="Enter your full name">
+                  </div>
+                </div>
+
+                <hr/>
+
+                <div class="form-group">
+                  <label for="inputEmail3" class="col-sm-2 control-label" style="text-align: left">USERNAME <br><span class="text-muted summary">Enter a username</span></label>
+                  <div class="col-sm-10">
+                    <input type="email" class="form-control" id="inputEmail3" placeholder="Enter your username">
+                  </div>
+                </div>
+                <hr/>
+
+
+                <div class="form-group">
+                  <label for="inputEmail3" class="col-sm-2 control-label" style="text-align: left">PHONE NUMBER<br><span class="text-muted summary">Include area code</span></label>
+                  <div class="col-sm-10">
+                    <input type="email" class="form-control" id="inputEmail3" placeholder="Enter your phone number">
+                  </div>
+                </div>
+                <hr/>
+                <div class="form-group">
+                  <label for="inputEmail3" class="col-sm-2 control-label" style="text-align: left">PROFILE PICTURE <br><span class="text-muted summary">Maximum size 5MB</span></label>
+                  <div class="col-sm-2">
+                    <div class="imga"></div>
+                    <div class="button text-center">UPLOAD</div>
+                  </div>
+                </div>
+                <hr/>
+                <div class="form-group">
+                  <label for="inputEmail3" class="col-sm-2 control-label" style="text-align: left">PASSWORD <br><span class="text-muted summary">Minimum 8 characters</span></label>
+                  <div class="col-sm-10">
+                    <input type="email" class="form-control" id="inputEmail3" placeholder="Enter your password">
+                  </div>
+                </div>
+                <hr/>
+                <div class="form-group">
+                  <label for="inputEmail3" class="col-sm-2 control-label" style="text-align: left">RETYPE PASSWORD <br><span class="text-muted summary">Same as above</span></label>
+                  <div class="col-sm-10">
+                    <input type="email" class="form-control" id="inputEmail3" placeholder="Enter your password again">
+                  </div>
+                </div>
+                <hr/>
+
+                <div class="form-group">
+                  <label for="inputEmail3" class="col-sm-2 control-label" style="text-align: left"></label>
+                  <div class="col-sm-2">
+
+                    <div class="button text-center">SUBMIT</div>
+                  </div>
+                </div>
+
+
+              </form>
+
+
+
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!--
+    Second line shit start here-->
+
+    <div class=" line col-md-12">
+      <div class="num col-md-1  col-xs-1 text-center">2</div>
+      <div class="text col-md-10 col-xs-10">Favourites</div>
+      <div class="toggle col-md-1 col-xs-1 text-center">
+        <a style="color: #3E4B58" role="button" data-toggle="collapse" href="#collapseExample2" aria-expanded="false" aria-controls="collapseExample">
+          <%= fa_icon 'caret-down'%>
+        </a>
+      </div>
+
+      <div class="col-md-12 ", id="donga">
+        <div class="collapse" id="collapseExample2">
+          <div class="toggle-text">
+
+
+            <div class="container-fluid products">
+              <div class="row">
+                <% 12.times do %>
+                    <div class="col-sm-3 col-xs-6 product clearfix" style="background-image: url(<%= asset_url('product.jpg')%>)">
+
+
+
+                      <div class="overlay">
+                        <div class="color text-center" style="">
+                          <span style="color: white; "><%= fa_icon "search 2x"%></span>
+
+                        </div>
+                        <div class="icon">
+                          <div class="col-sm-6">
+                            <h3 id="title">Floor Covering</h3>
+                            <p><%= fa_icon "map-marker"%> Shoukat khanam</p>
+                            <p class="star"><span><%= fa_icon "star"%></span>&nbsp;<span><%= fa_icon "star"%></span>&nbsp;<span><%= fa_icon "star"%></span>&nbsp;<span><%= fa_icon "star"%></span>&nbsp;<span><%= fa_icon "star"%></span></p>
+                          </div>
+                          <div class="col-sm-6" id="greeno">
+                            <h3 class="l_icons pull-right"><span><%= image_tag 'gallery.png'%></span> <span><%= image_tag 'link.png'%></span> <span><%= image_tag 'info.png'%></span><span><%= image_tag 'heart.png'%></span></h3>
+
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+
+                <%end%>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+
+  </div>
+</div>
+

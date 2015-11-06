@@ -29,10 +29,24 @@ class HomeController < ApplicationController
 
   end
 
+  def faq_name
+    
+  end
+
   def terms
 
   end
   def contact
+
+  end
+
+  def form
+
+  end
+  def comp_profile
+
+  end
+  def user_profile
 
   end
 

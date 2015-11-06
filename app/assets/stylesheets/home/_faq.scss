@@ -2,14 +2,80 @@
   margin-top: 30px;
   margin-bottom: 30px;
 
-  .faq-side{
-    .topico{
-      margin-bottom: 30px;
-      h4{font-weight: 900;}
-      .question{
-        color: #3E4B58;
-      }
-      .well{margin-bottom: 1px;}
+
+  .indi-cat{
+    margin-bottom: 50px;
+    .icon{
+      width: 75%;
     }
+    p{margin-bottom: 4px;}
+    .button{cursor:pointer ;width: 35%; height: 35px; background-color: $green-color; color: white; margin-top: 21px;    padding-top: 7px; font-weight: 700}
+
+  }
+
+}
+
+
+
+
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+  .faq{
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+
+    .indi-cat{
+      .icon{
+        width: 90%;
+      }
+      .button{width: 50%; height: 35px; background-color: $green-color; color: white; margin-top: 20px;    padding-top: 7px; font-weight: 700}
+    }
+
+  }
+
+}
+
+
+
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+
+
+  .faq{
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+
+    .indi-cat{
+      .icon{
+        width: 60%;
+      }
+      .button{width: 29%; height: 35px; background-color: $green-color; color: white; margin-top: 20px;    padding-top: 7px; font-weight: 700}
+    }
+
+  }
+
+
+
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+  .faq{
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+
+    .indi-cat{
+      .icon{
+        width: 80%;
+      }
+      .button{width: 50%; height: 35px; background-color: $green-color; color: white; margin-top: 20px;    padding-top: 7px; font-weight: 700}
+    }
+
   }
 }
