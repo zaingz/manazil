@@ -1,0 +1,46 @@
+
+//= require jquery
+//= require jquery_ujs
+//= require turbolinks
+//= require bootstrap-sprockets
+//= require_tree .
+
+$( document ).ready(function() {
+    var i=0;
+
+
+    var slider = function(){
+
+        console.log("Slider");
+
+    var images= ["<%= image_path('chus1.jpg')%>", "<%= image_path('chus2.jpg')%>",
+        "<%= image_path('chus3.jpg')%>", "<%= image_path('chus4.jpg')%>",
+        "<%= image_path('chus5.jpg')%>", "<%= image_path('artecasa.jpg')%>",
+        "<%= image_path('artecasa2.jpg')%>"
+
+    ];
+/*
+    $(".full_img").attr("src",images[i]);
+
+        $('.full_img').fadeIn(500);*/
+
+
+        $('.full_img').fadeOut(450, function() {
+            $(".full_img").attr("src",images[i]);
+            $('.full_img').fadeIn(450);
+        });
+
+        console.log("VAlue " +i);
+
+        if (i===6){
+            console.log("VAlue is reset" );    i=i*0;
+        }else{
+        i=i+1;
+        }
+
+    }
+
+    setInterval(slider,3000);
+
+
+});

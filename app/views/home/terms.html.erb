@@ -1,16 +1,37 @@
 <%= render 'home/top_banner', title: 'Terms & Condition'%>
-<% content_for :title, "Terms & Condition" %>
+<% content_for :title, "Terms & Conditions" %>
 
 <div class="container rules">
   <div class="row">
 
+    <% array = [
+
+            "Terms of Use",
+"       Basic Terms                                ",
+"       General Conditions                         ",
+"       Rights                                     ",
+"       Reporting Copyright and Other IP Violations",
+"       Disclaimer of Warranties                   ",
+"       Limitation of Liability; Waiver            ",
+"       Indemnification                            ",
+"       Arbitration                                ",
+"       Time Limitation on Claims                  ",
+"       Governing Law & Venue                      ",
+"       Entire Agreement                           ",
+"       Territorial Restrictions Indemnification   ",
+"       Arbitration                                ",
+"       Time Limitation on Claims                  ",
 
 
-    <%20.times do |i|%>
+
+    ]%>
+
+
+    <%15.times do |i|%>
 
         <div class=" line col-xs-12">
           <div class="num col-xs-1 text-center"><%= x=i+1 %></div>
-          <div class="text col-xs-10">Description of service</div>
+          <div class="text col-xs-10"><%= array[i]%></div>
           <div class="toggle col-xs-1 text-center">
             <a style="color: #3E4B58" role="button" data-toggle="collapse" href="<%= "#collapseExample#{i}" %>" aria-expanded="false" aria-controls="collapseExample">
               <%= fa_icon 'caret-down'%>
@@ -20,8 +41,15 @@
           <div class="col-xs-10 col-xs-offset-1">
             <div class="collapse" id="<%= "collapseExample#{i}" %>">
               <div class="toggle-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aperiam asperiores atque deleniti dolor doloremque enim facilis minima minus molestias nemo, pariatur porro praesentium quos reprehenderit sed, velit veniam vero.
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium adipisci alias beatae, dignissimos eos ex expedita molestiae necessitatibus quaerat, quos repellat ullam velit vero voluptas, voluptatibus? Aperiam deleniti quod veniam?
+
+
+                These Terms of Use are effective on January 19, 2016.
+<br/>
+                By accessing or using the Instagram website, the Instagram service, or any applications (including mobile applications) made available by Instagram (together, the "Service"), however accessed, you agree to be bound by these terms of use ("Terms of Use"). The Service is owned or controlled by Instagram, LLC ("Instagram"). These Terms of Use affect your legal rights and obligations. If you do not agree to be bound by all of these Terms of Use, do not access or use the Service.There may be times when we offer a special feature that has its own terms and conditions that apply in addition to these Terms of Use. In those cases, the terms specific to the special feature control to the extent there is a conflict with these Terms of Use.
+
+                ARBITRATION NOTICE: EXCEPT IF YOU OPT-OUT AND EXCEPT FOR CERTAIN TYPES OF DISPUTES DESCRIBED IN THE ARBITRATION SECTION BELOW, YOU AGREE THAT DISPUTES BETWEEN YOU AND INSTAGRAM WILL BE RESOLVED BY BINDING, INDIVIDUAL ARBITRATION AND YOU WAIVE YOUR RIGHT TO PARTICIPATE IN A CLASS ACTION LAWSUIT OR CLASS-WIDE ARBITRATION.
+
+
               </div>
             </div>
           </div>

@@ -12,7 +12,7 @@
 
           <h4>Articasa Branch 1</h4>
           <div class="col-sm-6 col-xs-6">
-            <p><span class="greeno"><%= image_tag 'kwtfinder.png', width: 15%></span>&nbsp; Kuwait city</p>
+            <p><span class="greeno"><%= image_tag 'kuwait_finder.svg', width: 15%></span>&nbsp; Kuwait city</p>
             <p><span class="greeno"><%= fa_icon "phone"%></span>&nbsp; +9789555540</p>
             <p><span class="greeno"><%= fa_icon "search"%></span>&nbsp; Kuwait city</p>
           </div>
@@ -30,7 +30,7 @@
             function initialize() {
                 var mapCanvas = document.getElementById("<%= "map#{i}" %>");
                 var mapOptions = {
-                    center: new google.maps.LatLng(44.5403, -78.5463),
+                    center: new google.maps.LatLng(29.3667, 47.9667),
                     zoom: 8,
                     disableDefaultUI: true,
                     mapTypeId: google.maps.MapTypeId.ROADMAP

@@ -1,7 +1,9 @@
 .services{
 
   .col-md-6{
-    height: 400px;
+    height: 365px;
+    .border{margin: 10px;border: 2px solid $green-color;padding: 10px;}
+
   }
   .header{
    padding-bottom: 35px;

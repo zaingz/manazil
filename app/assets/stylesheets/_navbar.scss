@@ -2,10 +2,12 @@
   margin-bottom: 11px;
 }
 .navbar-brand{
+
   padding-top: 0px;
   padding-right: 0px;
   text-align: center;
   img{width: 125px;margin: 0 auto;top: -12px;
+    z-index: 9;
     position: relative;
     -webkit-transition: .3s ease-in-out;
     transition: .3s ease-in-out;
@@ -17,6 +19,7 @@
   li>a{height: 55px;width:55px;padding-left: 6px;; padding-right: 6px;padding-bottom:0px;padding-top:7px;-webkit-transition: .3s ; &:hover{background-color: transparent;padding-top: 3px}}
   li>a>svg{width: 50px; height: 50px; margin: 0 auto;-webkit-transition: .3s ease-in-out; path{fill: #595B58; }
     transition: .3s ease-in-out; &:hover{width: 52px; height: 53px;path{fill: $green-color}}}
+  .arc{font-size: 11px; padding-left: 4%}
 }
 #nav-links-right{
   li>a:hover{background-color: transparent;}
@@ -107,9 +110,9 @@
     top: -00px;
     height: 1px;
 
-    img{        width: 80px;
+    img{        width: 110px;
       margin: 0 auto;
-      top: -27px;
+      top: -34px;
       position: relative;}
   }
   #nav-links{
@@ -162,9 +165,9 @@
     top: -00px;
     height: 1px;
 
-    img{        width: 80px;
+    img{        width: 100px;
       margin: 0 auto;
-      top: -30px;
+      top: -40px;
       position: relative;}
   }
   #nav-links{
