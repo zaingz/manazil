@@ -1,4 +1,61 @@
-<%= image_tag 'artecasa.jpg', class: "full_img"%>
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="5"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+
+      <%= image_tag 'artecasa2.jpg' , class: 'full_img'%>
+
+    </div>
+
+    <div class="item">
+
+      <%= image_tag 'chus1.jpg', class: 'full_img'%>
+
+    </div>
+
+    <div class="item">
+
+      <%= image_tag 'chus2.jpg', class: 'full_img'%>
+
+    </div>
+    <div class="item">
+
+      <%= image_tag 'chus3.jpg', class: 'full_img'%>
+
+    </div>
+    <div class="item">
+
+      <%= image_tag 'chus4.jpg', class: 'full_img'%>
+
+    </div>
+    <div class="item">
+
+      <%= image_tag 'chus5.jpg', class: 'full_img'%>
+
+    </div>
+
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
 
 <div class="container about">
   <h1 class="text-center"><b>ABOUT ARTICASA</b></h1>
@@ -76,7 +133,7 @@
           &nbsp;&nbsp;Services</a></li>
         <li class="<%= active==3 ? 'active' : nil%>"><a  href="/company/offers">
 
-          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  viewBox="0 0 1024 1024"><g id="icomoon-ignore">
+          <svg id="offers-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  viewBox="0 0 1024 1024"><g id="icomoon-ignore">
           </g>
             <path d="M652.724 361.96c16.2 0 32.406-0.168 48.604 0.028 64.662 0.784 114.182 63.244 100.31 126.408-11.060 50.336-52.826 84.216-104.504 84.514-32.142 0.186-64.292-0.118-96.426 0.208-4.66 0.048-9.852 1.438-13.858 3.796-69.086 40.636-138.022 81.514-206.984 122.35-10.69 6.332-22.39 8.45-34.59 7.896-24.514-1.118-43.512-13.38-59.772-30.58-20.642-21.848-34.090-47.99-43.862-76.102-20.144-57.942-25.324-117.52-19.22-178.358 3.912-38.964 12.556-76.698 29.072-112.304 12.782-27.576 28.978-52.846 55.254-69.648 25.72-16.446 52.118-17.828 78.964-1.844 67.066 39.934 134.222 79.718 201.494 119.322 4.228 2.488 9.65 3.942 14.56 4.084 16.972 0.496 33.968 0.192 50.956 0.192 0.002 0.012 0.002 0.026 0.002 0.038zM286.916 596.86c7.978 15.454 18.060 29.35 31.588 40.5 25.006 20.62 53.952 21.492 79.734 1.884 21.97-16.71 35.412-39.746 44.28-65.194 26.842-77.026 25.998-153.58-6.528-228.956-8.040-18.634-19.57-35.124-35.514-48.092-25.876-21.042-55.812-21.196-81.596-0.042-23.906 19.626-36.848 46.322-46.27 74.918-10.208 30.988-14.452 62.968-14.33 107.668 0.358 33.076 7.682 76.714 28.636 117.314z"></path>
             <path d="M695.522 596.040c-30.354 0-59.744 0-89.652 0-0.128 2.878-0.344 5.416-0.344 7.952-0.036 49.648-0.042 99.3-0.046 148.95 0 33.95 9.92 43.97 43.814 44.004 5.732 0.008 11.478-0.536 17.198-1.032 16.744-1.458 26.314-10.378 27.744-27.306 1.12-13.242 1.188-26.594 1.234-39.9 0.14-41.29 0.052-82.576 0.052-123.866 0-2.806 0-5.614 0-8.802z"></path>

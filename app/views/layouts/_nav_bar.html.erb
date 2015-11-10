@@ -17,7 +17,7 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav" id="nav-links">
-        <li><a href="/companies">
+        <li><a href="/companies" class="<%=  yield(:title)=="Companies" ? 'active_m' : nil%>">
 
           <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"     viewBox="0 0 1024 1024"><g id="icomoon-ignore">
           </g>
@@ -38,7 +38,7 @@
 
 
 
-        <li><a href="/products">
+        <li><a href="/products"  class="<%=  yield(:title)=="Products" ? 'active_m' : nil%>">
 
           <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"     viewBox="0 0 1024 1024"><g id="icomoon-ignore">
           </g>
@@ -52,7 +52,7 @@
         </a><span class="arc">Products</span></li>
 
 
-        <li><a href="/templates">
+        <li><a href="/templates"  class="<%=  yield(:title)=="Templates" ? 'active_m' : nil%>">
 
           <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"     viewBox="0 0 1024 1024"><g id="icomoon-ignore">
           </g>
@@ -72,7 +72,7 @@
 
         </a><span class="arc">Templates</span></li>
 
-        <li><a href="/rules">
+        <li><a href="/rules" class="<%=  yield(:title)=="Rules" ? 'active_m' : nil%>">
 
           <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"     viewBox="0 0 1024 1024"><g id="icomoon-ignore">
           </g>
@@ -89,7 +89,7 @@
         </a><span class="arc">Rules</span></li>
 
 
-        <li><a href="/tips">
+        <li><a href="/tips"  class="<%=  yield(:title)=="Tips" ? 'active_m' : nil%>">
 
           <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"     viewBox="0 0 1024 1024"><g id="icomoon-ignore">
           </g>
@@ -122,7 +122,7 @@
         </a><span class="arc">Blogs</span></li>
 
 
-        <li><a href="/offers">
+        <li><a href="/offers" class="<%=  yield(:title)=="Offers" ? 'active_m' : nil%>">
 
           <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"     viewBox="0 0 1024 1024"><g id="icomoon-ignore">
           </g>

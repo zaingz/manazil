@@ -1,7 +1,64 @@
 
 <% content_for :title, "Products" %>
 
-<%= image_tag 'artecasa2.jpg', class: "full_img"%>
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="5"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+
+      <%= image_tag 'artecasa2.jpg' , class: 'full_img'%>
+
+    </div>
+
+    <div class="item">
+
+      <%= image_tag 'chus1.jpg', class: 'full_img'%>
+
+    </div>
+
+    <div class="item">
+
+      <%= image_tag 'chus2.jpg', class: 'full_img'%>
+
+    </div>
+    <div class="item">
+
+      <%= image_tag 'chus3.jpg', class: 'full_img'%>
+
+    </div>
+    <div class="item">
+
+      <%= image_tag 'chus4.jpg', class: 'full_img'%>
+
+    </div>
+    <div class="item">
+
+      <%= image_tag 'chus5.jpg', class: 'full_img'%>
+
+    </div>
+
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
 
 <div class="container about">
   <h1 class="text-center">ABOUT <b>MANAZIL</b></h1>
@@ -33,7 +90,7 @@
           <li><a href="#"><%= image_tag 'air conditioning.svg'  %>&nbsp;&nbsp; Air conditioning</a></li>
           <li><a href="#"><%= image_tag 'engineering.svg'  %>&nbsp;&nbsp; Engineering</a></li>
           <li><a href="#"><%= image_tag 'insulator.svg'  %>&nbsp;&nbsp; Insulators</a></li>
-          <li><a href="#"><%= image_tag 'door.svg'  %>&nbsp;&nbsp; Carpenters & Door</a></li>
+          <li><a href="#"><%= image_tag 'door.svg'  %>&nbsp;&nbsp; Carpenters & Doors</a></li>
           <li><a href="#"><%= image_tag 'paint.svg'  %>&nbsp;&nbsp; Paint</a></li>
           <li><a href="#"><%= image_tag 'consulting.svg'  %>&nbsp;&nbsp; Consulting</a></li>
           <li><a href="#"><%= image_tag 'wall.svg'  %>&nbsp;&nbsp; Walls</a></li>
@@ -97,17 +154,17 @@
   </div>
 
   <div class="col-sm-7 review greeno topper-pad">
-    <h3 >User Reiew</h3>
+    <h3 >User Review</h3>
     <p >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium amet, dolorem expedita neque nesciunt porro reprehenderit sint vitae. Accusamus aliquid cum exercitationem maiores necessitatibus nihil omnis pariatur quasi sunt voluptatem?</p>
   </div>
 
   <div class="col-sm-3">
     <div class="thumbnail">
-      <p class="text-center">Very nice and beautifyl</p>
+      <p class="text-center">Very nice and beautiful</p>
       <%= image_tag 'home.jpg'%>
       <div class="caption">
         <h3 class="greeno">Fiaz Ahmed</h3>
-        <p>Very nice and beautifyl</p>
+        <p>Very nice and beautiful</p>
 
       </div>
     </div>
