@@ -52,6 +52,12 @@ h1{font-size: 35px;font-weight: 300;}
   svg{path{fill: $green-color !important; }}
 }
 
+.thumbnail{
+  border-radius: 1px;
+}
+.modal-content{ border-radius: 1px;}
+.chumi{border-radius: 1px;background-color: $green-color;}
+
 
 @media (max-width: 480px) {
 
