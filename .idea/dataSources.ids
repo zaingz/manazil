@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="Rails Manazil: development" uuid="b47ac2df-f00a-4755-9833-e221aa063206">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+  <data-source name="Rails Manazil: test" uuid="788082ed-3d07-48ae-8315-fdef27227d4f">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+  <data-source name="Rails Manazil: production" uuid="30e6882d-4e2a-4701-a28e-6d24002718ac">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+</component>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="Rails Manazil: development" uuid="b47ac2df-f00a-4755-9833-e221aa063206">
+      <first-sync>true</first-sync>
+      <user-name>zain</user-name>
+    </data-source>
+    <data-source name="Rails Manazil: test" uuid="788082ed-3d07-48ae-8315-fdef27227d4f">
+      <first-sync>true</first-sync>
+      <user-name>zain</user-name>
+    </data-source>
+    <data-source name="Rails Manazil: production" uuid="30e6882d-4e2a-4701-a28e-6d24002718ac">
+      <first-sync>true</first-sync>
+      <user-name>Manazil</user-name>
+      <user-password>df96df8fdf97df8adfefdfe4dffcdff1df8ddfe7dfebdfe4dfebdff0dfe3dfe6dff5dfeedfebdffedfebdfe8dfebdff9dfefdff5dffadfebdff9dff9dffddfe5dff8dfeedf8ddff7df8adf8fdf94</user-password>
+    </data-source>
+  </component>
+</project>
