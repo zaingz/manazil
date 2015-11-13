@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+
+
+  root 'home#index'
+
   get 'company/index'
   get 'company/services'
   get 'company/branches'
