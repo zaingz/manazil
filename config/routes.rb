@@ -24,7 +24,7 @@ Rails.application.routes.draw do
   get '/templates' => 'home#templates'
   get '/company/profile' => 'home#comp_profile'
   get '/user/profile' => 'home#user_profile'
-  get '/companies/create' =>  'home#companies_create'
+  get '/companies/add' =>  'home#companies_create'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
