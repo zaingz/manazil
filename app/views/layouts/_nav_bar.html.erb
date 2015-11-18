@@ -1,4 +1,4 @@
-<nav class="navbar ">
+<nav class="navbar hidden-xs hidden-sm">
   <div class="container">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -145,4 +145,31 @@
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
+</nav>
+
+
+<nav class="mob-nav visible-xs visible-sm">
+  <div class=container-fluid>
+    <div class="col-xs-4 text-left">
+      <span id="left-hamburger" class="hambergur"><%= fa_icon 'bars'%></span>
+    </div>
+    <div class="col-xs-4 icon">
+        <%= image_tag 'Manazil logo.svg', class: 'mobo-logo' %>
+    </div>
+    <div class="col-xs-4 text-right">
+      <span id="right-hamburger" class="hambergur"><%= fa_icon 'bars'%></span>
+    </div>
+  </div>
+
+</nav>
+
+<nav id="l-menu" class="left-menu visible-xs visible-sm">
+  <div class=container-fluid>
+        <div class="col-xs-8 col-xs-offset-2 icon-box">
+          <div class="col-xs-4 text-center"><a href="#"><%= image_tag 'search.png' %></a></div>
+          <div class="col-xs-4 text-center"><a href="#"><%= image_tag 'user.png' %></a></div>
+          <div class="col-xs-4 text-center"><a href="#"><%= image_tag 'key.png' %></a></div>
+        </div>
+  </div>
+
 </nav>

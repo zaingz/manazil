@@ -44,6 +44,38 @@
 
 
 
+.mob-nav{
+  height: 62px;
+  background-color: $green-color;
+
+  .col-xs-4{
+    margin-top: 18px;
+  }
+  .hambergur{
+    cursor: pointer;
+    font-size: 18px;
+    color: white;
+  }
+  .mobo-logo{
+    margin: 0 auto;
+    position: absolute;
+    z-index: 1;
+    width: 115px;
+    margin-left: 26%;
+    top: -24px;
+
+  }
+
+}
+
+.left-menu{
+  //position: ;
+  background-color: white;
+  height: 120px;
+  z-index: 99999;
+  .icon-box{margin-top: 58px;}
+}
+
 
 
 
