@@ -5,6 +5,10 @@ class HomeController < ApplicationController
 
   end
 
+  def user_welcome
+
+  end
+
   def offers
 
   end

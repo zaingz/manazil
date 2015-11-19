@@ -1,3 +1,11 @@
+
+$(document).on('page:load', function(){
+    $('#l-menu').slideUp(1);
+    $('#r-menu').slideUp(1);
+    $("#right-hamburger").click(function(){console.log('click'); $("#l-menu").slideToggle()});
+    $("#left-hamburger").click(function(){console.log('click'); $("#r-menu").slideToggle()});
+});
+
 $( document ).ready(function() {
 
     //for login icons
