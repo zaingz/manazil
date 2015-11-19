@@ -71,9 +71,31 @@
 .left-menu{
   //position: ;
   background-color: white;
-  height: 120px;
+  height: 160px;
   z-index: 99999;
-  .icon-box{margin-top: 58px;}
+  .icon-box{margin-top: 73px;}
+}
+
+.right-menu{
+  //position: ;
+  background-color: white;
+  height: 160px;
+  z-index: 99999;
+  #nav-links-mobo{
+    margin-top: 5%;
+    display: flex;
+    display: -webkit-flex; /* Safari */
+    flex-wrap:         wrap;
+    -webkit-flex-wrap: wrap; /* Safari */
+    justify-content:         center;
+    -webkit-justify-content: center;
+    .arc>span{color: #FFF}
+    li{text-align: center;font-size: 10px;margin: 0;}
+    li>a{padding-left: 6px;; padding-right: 6px;padding-bottom:1px;padding-top:5px; color: #e9e9e9; &:hover{background-color: transparent;}}
+    li>a>svg{width: 50px; height: 50px; margin: 0 auto;-webkit-transition: .3s ease-in-out; path{fill:  $green-color; }
+      transition: .3s ease-in-out; &:hover{width: 52px; height: 53px;path{fill: darken($green-color, 2%)}}}
+
+  }
 }
 
 
@@ -148,7 +170,7 @@
       position: relative;}
   }
   #nav-links{
-    margin-top: 10%;
+    margin-top: 5%;
     display: flex;
     display: -webkit-flex; /* Safari */
     flex-wrap:         wrap;
@@ -158,8 +180,8 @@
     .arc>span{color: #FFF}
     li{text-align: center;font-size: 10px;margin: 0;}
     li>a{padding-left: 6px;; padding-right: 6px;padding-bottom:1px;padding-top:5px; color: #e9e9e9; &:hover{background-color: transparent;}}
-    li>a>svg{width: 50px; height: 50px; margin: 0 auto;-webkit-transition: .3s ease-in-out; path{fill:  #e9e9e9; }
-      transition: .3s ease-in-out; &:hover{width: 52px; height: 53px;path{fill: #e9e9e9;}}}
+    li>a>svg{width: 50px; height: 50px; margin: 0 auto;-webkit-transition: .3s ease-in-out; path{fill:  $green-color; }
+      transition: .3s ease-in-out; &:hover{width: 52px; height: 53px;path{fill: darken($green-color, 2%)}}}
   }
   #nav-links-right{
     margin: 0 auto;
@@ -170,7 +192,36 @@
     li>a{background-color: #e9e9e9; margin: 4px; border-radius: 2px}
     li>a>img{width: 4%}
   }
+  .mobo-logo{
+    margin: 0 auto;
+    position: absolute;
+    z-index: 1;
+    width: 115px;
+    margin-left: 16% !important;
+    top: -24px;
 
+  }
+  .right-menu{
+    //position: ;
+    background-color: white;
+    height: 180px !important;
+    z-index: 99999;
+    #nav-links-mobo{
+      margin-top: 9%;
+      display: flex;
+      display: -webkit-flex; /* Safari */
+      flex-wrap:         wrap;
+      -webkit-flex-wrap: wrap; /* Safari */
+      justify-content:         center;
+      -webkit-justify-content: center;
+      .arc>span{color: #FFF}
+      li{text-align: center;font-size: 10px;margin: 0;}
+      li>a{padding-left: 6px;; padding-right: 6px;padding-bottom:1px;padding-top:5px; color: #e9e9e9; &:hover{background-color: transparent;}}
+      li>a>svg{width: 50px; height: 50px; margin: 0 auto;-webkit-transition: .3s ease-in-out; path{fill:  $green-color; }
+        transition: .3s ease-in-out; &:hover{width: 52px; height: 53px;path{fill: darken($green-color, 2%)}}}
+
+    }
+  }
 }
 
 /* Portrait phones and smaller */
@@ -224,5 +275,36 @@
     margin-top: 15px;
     li>a{background-color: #e9e9e9; margin: 4px; border-radius: 2px}
     li>a>img{width: 4%}
+  }
+
+  .mobo-logo{
+    margin: 0 auto;
+    position: absolute;
+    z-index: 1;
+    width: 90px !important;
+    margin-left: 1% !important;
+    top: -24px;
+
+  }
+  .right-menu{
+    //position: ;
+    background-color: white;
+    height: 185px !important;
+    z-index: 99999;
+    #nav-links-mobo{
+      margin-top: 5%;
+      display: flex;
+      display: -webkit-flex; /* Safari */
+      flex-wrap:         wrap;
+      -webkit-flex-wrap: wrap; /* Safari */
+      justify-content:         center;
+      -webkit-justify-content: center;
+      .arc>span{color: #FFF}
+      li{text-align: center;font-size: 10px;margin: 0;}
+      li>a{padding-left: 6px;; padding-right: 6px;padding-bottom:1px;padding-top:5px; color: #e9e9e9; &:hover{background-color: transparent;}}
+      li>a>svg{width: 50px; height: 50px; margin: 0 auto;-webkit-transition: .3s ease-in-out; path{fill:  $green-color; }
+        transition: .3s ease-in-out; &:hover{width: 52px; height: 53px;path{fill: darken($green-color, 2%)}}}
+
+    }
   }
 }
