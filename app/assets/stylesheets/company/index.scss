@@ -78,8 +78,33 @@
   .active{border-bottom: 2px solid $green-color; a{color: $green-color; svg>path{fill:$green-color;}}}
 }
 }
-::i-block-chrome,.tabs {
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  /* Safari and Chrome */
+
+
+  /* Safari only override */
+  ::i-block-chrome,.tabs {
+    height: 86px;
+  }
+}
+/* Safari 6.1+ (9.0 is the latest version of Safari at this time) */
+
+@media screen and (min-color-index:0)
+and(-webkit-min-device-pixel-ratio:0) { @media
+{
+  .tabs {
+
+    height: 86px;
+
+  }
+}}
+
+/* Safari 7.1+ (9.0 is the latest version of Safari at this time) */
+
+_::-webkit-full-page-media, _:future, :root .tabs {
+
   height: 86px;
+
 }
 
 
