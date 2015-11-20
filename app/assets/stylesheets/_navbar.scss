@@ -26,7 +26,7 @@
   margin-top: 15px;
   li>a>img{width: 80%;-webkit-transition: .3s ease-in-out;
     transition: .3s ease-in-out;
-    &:hover{-webkit-transform: scale(1.17);}}
+    &:hover{-webkit-transform: scale(1.17);transform: scale(1.17);}}
 }
 
 .navbar-toggle {
