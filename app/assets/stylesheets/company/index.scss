@@ -84,7 +84,7 @@
 
   /* Safari only override */
   ::i-block-chrome,.tabs {
-    height: 86px;
+    height: 86px !important;
   }
 }
 /* Safari 6.1+ (9.0 is the latest version of Safari at this time) */
@@ -95,7 +95,7 @@
 
 _::-webkit-full-page-media, _:future, :root .tabs {
 
-  height: 86px;
+  height: 86px !important;
 
 }
 
