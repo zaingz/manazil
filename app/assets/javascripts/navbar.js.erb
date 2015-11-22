@@ -2,11 +2,26 @@
 $(document).on('page:load', function(){
     $('#l-menu').slideUp(1);
     $('#r-menu').slideUp(1);
+    $('#login-signup-box').slideUp(1);
     $("#right-hamburger").click(function(){console.log('click'); $("#l-menu").slideToggle()});
     $("#left-hamburger").click(function(){console.log('click'); $("#r-menu").slideToggle()});
+    $('#login-modal-trigger').click(function(){ $('#login-signup-box').slideToggle(300); $('#login-signup-box2').slideUp(1);});
+
+    $('#login-signup-box2').slideUp(1);
+    $('#signup-modal-trigger').click(function(){ $('#login-signup-box2').slideToggle(300); $('#login-signup-box').slideUp(1);});
+
 });
 
 $( document ).ready(function() {
+
+
+    //login modal shit
+    $('#login-signup-box').slideUp(1);
+    $('#login-modal-trigger').click(function(){ $('#login-signup-box').slideToggle(300); $('#login-signup-box2').slideUp(1);});
+
+    $('#login-signup-box2').slideUp(1);
+    $('#signup-modal-trigger').click(function(){ $('#login-signup-box2').slideToggle(300); $('#login-signup-box').slideUp(1);});
+
 
     //for login icons
     $('#l-menu').slideUp(1);

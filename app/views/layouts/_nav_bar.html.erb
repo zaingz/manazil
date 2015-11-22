@@ -140,15 +140,19 @@
 
       <ul class="nav navbar-nav navbar-right" id="nav-links-right">
         <li><a href="#"><%= image_tag 'search.png' %></a></li>
-        <li><a href="#"><%= image_tag 'user.png' %></a></li>
-        <li><a href="#"><%= image_tag 'key.png' %></a></li>
+        <li><a id="signup-modal-trigger" href="#"><%= image_tag 'user.png' %></a></li>
+        <li><a id="login-modal-trigger" href="#"><%= image_tag 'key.png' %></a></li>
+        <%= render 'layouts/login'%>
+        <%= render 'layouts/signup'%>
       </ul>
+
+
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
 
 
-<nav class="mob-nav visible-xs visible-sm">
+<nav style="display: none" class="mob-nav visible-xs visible-sm">
   <div class=container-fluid>
     <div class="col-xs-4 text-left">
       <span id="left-hamburger" class="hambergur"><%= fa_icon 'bars'%></span>
@@ -300,3 +304,4 @@
   </div>
 
 </nav>
+

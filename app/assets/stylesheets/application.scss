@@ -61,7 +61,10 @@ h1{font-size: 35px;font-weight: 300;}
 .modal-content{ border-radius: 1px;}
 .chumi{border-radius: 1px;background-color: $green-color;}
 
-
+a::after{background-color: transparent;}
+a:visited{background-color: transparent;}
+a:active{background-color: transparent;}
+a:focus{background-color: transparent!important;}
 
 
 .form-control{border: 1px solid $green-color}

@@ -25,7 +25,7 @@ Rails.application.routes.draw do
   get '/company/profile' => 'home#comp_profile'
   get '/user/profile' => 'home#user_profile'
   get '/companies/add' =>  'home#companies_create'
-  get '/inner' => 'home#user_welcome'
+  get '/user_home' => 'home#user_welcome'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
