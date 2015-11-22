@@ -167,7 +167,7 @@
 
 </nav>
 
-<nav id="l-menu" class="left-menu ">
+<nav style="display: none" id="l-menu" class="left-menu ">
   <div class=container-fluid>
         <div class="col-xs-8 col-xs-offset-2 icon-box">
           <div class="col-xs-4 text-center"><a href="#"><%= image_tag 'search.png' %></a></div>
@@ -178,7 +178,7 @@
 
 </nav>
 
-<nav id="r-menu" class="right-menu ">
+<nav style="display: none" id="r-menu" class="right-menu ">
   <div class=container-fluid>
     <ul class="nav " id="nav-links-mobo">
       <li><a href="/companies" class="<%=  yield(:title)=="Companies" ? 'active_m' : nil%>">
