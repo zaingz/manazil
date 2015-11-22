@@ -6,11 +6,13 @@
   <div class="row latest">
     <div class="col-sm-4 col-xs-12">
       <h2><%= image_tag 'Bars.svg', class: 'baro'%>Latest Reviews</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti distinctio dolores eligendi est eum, laudantium natus nostrum numquam odio officia omnis, optio placeat qui quod quos repellendus suscipit totam veniam.</p>
+      <p></p>
+
     </div>
-    <div class="col-sm-8 r_imgs">
-      <%3.times do%>
-        <div class="col-sm-4 review">
+    <div  class="col-sm-12 r_imgs">
+      <div id="owl-demo" style="margin-top: 20px;">
+      <%6.times do%>
+        <div  class="col-sm-3 review owl-item">
           <div>
             <img src="http://apartmentluxe.com/main/wp-content/uploads/2012/04/E51st_10D-1.jpg" class="img img-circle">
           </div>
@@ -30,6 +32,7 @@
           </div>
         </div>
           <%end%>
+      </div>
     </div>
   </div>
 
@@ -40,30 +43,32 @@
   <div class="row latest">
     <div class="col-sm-4 col-xs-12">
       <h2><%= image_tag 'Bars.svg', class: 'baro'%>Trending Reviews</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti distinctio dolores eligendi est eum, laudantium natus nostrum numquam odio officia omnis, optio placeat qui quod quos repellendus suscipit totam veniam.</p>
+      <p></p>
     </div>
-    <div class="col-sm-8 r_imgs">
-      <%3.times do%>
-          <div class="col-sm-4 review">
-            <div>
-              <img src="http://apartmentluxe.com/main/wp-content/uploads/2012/04/E51st_10D-1.jpg" class="img img-circle">
-            </div>
-            <div class="r_info" style="padding-top: 20px;">
-              <div class="left">
-                <%= image_tag 'jhony.png'%>
-                <div style="display: inline-flex;    position: relative;top: -10px;">
-                  <p class="star"><span><%= fa_icon "star"%></span>&nbsp;<span><%= fa_icon "star"%></span>&nbsp;<span><%= fa_icon "star"%></span>&nbsp;<span><%= fa_icon "star"%></span>&nbsp;<span><%= fa_icon "star"%></span></p>
+    <div  class="col-sm-12 r_imgs">
+      <div id="owl-demo2" style="margin-top: 20px;margin-bottom: 20px;">
+        <%6.times do%>
+            <div  class="col-sm-3 review owl-item">
+              <div>
+                <img src="http://apartmentluxe.com/main/wp-content/uploads/2012/04/E51st_10D-1.jpg" class="img img-circle">
+              </div>
+              <div class="r_info" style="padding-top: 20px;">
+                <div class="left">
+                  <%= image_tag 'jhony.png'%>
+                  <div style="display: inline-flex;    position: relative;top: -10px;">
+                    <p class="star"><span><%= fa_icon "star"%></span>&nbsp;<span><%= fa_icon "star"%></span>&nbsp;<span><%= fa_icon "star"%></span>&nbsp;<span><%= fa_icon "star"%></span>&nbsp;<span><%= fa_icon "star"%></span></p>
+                  </div>
+                  <div class="name" style="">
+                    <h3 class="greeno">Jhone doe</h3>
+                  </div>
                 </div>
-                <div class="name" style="">
-                  <h3 class="greeno">Jhone doe</h3>
+                <div class="well right" style="">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, eos!</p>
                 </div>
               </div>
-              <div class="well right" style="">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, eos!</p>
-              </div>
             </div>
-          </div>
-      <%end%>
+        <%end%>
+      </div>
     </div>
   </div>
 
