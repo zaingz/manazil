@@ -20,8 +20,8 @@
         .col-sm-6{background-color: white; height: 120px;}
         .star{color: $green-color}
         #greeno{color: $green-color; padding: 0}
-        .l_icons{}
-        .l_icons>span{margin-right: 10px;img{margin-top: 5px; width: 32px;cursor:pointer; transition: all .2s ease-in-out; &:hover{-webkit-transform: scale(0.92);transform: scale(0.92);}}}
+        .l_icons{margin-top: 22%;}
+        .l_icons>a{margin-right: 10px;img{margin-top: 5px; width: 32px;cursor:pointer; transition: all .2s ease-in-out; &:hover{-webkit-transform: scale(0.92);transform: scale(0.92);}}}
 
       }
       &:hover{opacity: 1}
@@ -63,7 +63,7 @@
           .star{color: $green-color}
           #greeno{color: $green-color; padding: 0}
           .l_icons{}
-          .l_icons>span{margin-right: 10px;img{margin-top: 5px; width: 28px;}}
+          .l_icons>a{margin-right: 10px;img{margin-top: 5px; width: 28px;}}
 
         }
         &:hover{opacity: 1}
@@ -98,8 +98,8 @@
           .col-sm-6{background-color: white; height: 100px;#title{font-size: 15px; }p{font-size: 11px;}}
           .star{color: $green-color}
           #greeno{color: $green-color; padding: 0}
-          .l_icons{}
-          .l_icons>span{margin-right: 8px;img{margin-top: 5px; width: 20px;}}
+          .l_icons{margin-top: 28%;}
+          .l_icons>a{margin-right: 8px;img{margin-top: 5px; width: 24px;}}
 
         }
         &:hover{opacity: 1}
@@ -135,7 +135,7 @@
           .star{color: $green-color}
           #greeno{color: $green-color; padding: 0}
           .l_icons{}
-          .l_icons>span{margin-right: 14px;img{margin-top: 5px; width: 21px;}}
+          .l_icons>a{margin-right: 14px;img{margin-top: 5px; width: 21px;}}
 
         }
         &:hover{opacity: 1}
@@ -171,8 +171,8 @@
           .col-sm-6{background-color: white; height: 105px;#title{font-size: 19px; }p{font-size: 14px;}}
           .star{color: $green-color}
           #greeno{color: $green-color; padding: 0; margin-left: 16%}
-          .l_icons{}
-          .l_icons>span{margin-right: 5px; text-align:right; img{margin-top: 5px; width: 20px;}}
+          .l_icons{margin-top: 30%;}
+          .l_icons>a{margin-right: 5px; text-align:right; img{margin-top: 5px; width: 24px;}}
 
         }
         &:hover{opacity: 1}

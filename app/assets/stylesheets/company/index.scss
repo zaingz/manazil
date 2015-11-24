@@ -4,12 +4,16 @@
 @import "offers";
 @import "reviews";
 
+#nida{margin-top: 0; margin-bottom: 30px;}
+
+
 
 .full_img{
   width: 100%;
 }
 
 .about{
+  text-align: center;
     padding-top: 1%;
     padding-bottom: 1%;
     color: $green-color;
@@ -113,6 +117,7 @@ _::-webkit-full-page-media, _:future, :root .tabs {
 
     .nav {
 
+
       li {
 
         width: 218px;
@@ -164,7 +169,7 @@ _::-webkit-full-page-media, _:future, :root .tabs {
 
     .content{
 
-      .img>img{width: 75%;}
+      .img>img{width: 105%;}
       .list{padding: 0;color: #6f7d95; list-style: none;li{margin-bottom: 10px;}}
     }
     .tabs{
@@ -194,7 +199,7 @@ _::-webkit-full-page-media, _:future, :root .tabs {
     color: white;
     margin-bottom: 3%;
     .nav{
-      text-align: center;margin-bottom: 5%;
+      text-align: left;margin-bottom: 5%;
       li{transition: all 0.3s ;margin-left: 0.9%; display: inline-flex; margin-right: 0.9%; margin-top: 10px; width: 30%; border: 3px solid white; &:hover{ border: 3px solid white}}
 
       li>a{img{width: 11px;}width: 100%; transition: all 0.3s ;font-size: 13px;color: white;&:hover{color: white;background-color: darken($orange-color, 10%); font-size: 14px; }}
@@ -211,7 +216,7 @@ _::-webkit-full-page-media, _:future, :root .tabs {
 
     .content{
 
-      .img>img{width: 80%;}
+      .img>img{width: 90%;}
       .list{padding: 0;color: #6f7d95; list-style: none;li{margin-bottom: 15px;}}
     }
     .tabs{
@@ -233,6 +238,10 @@ _::-webkit-full-page-media, _:future, :root .tabs {
 /* Portrait phones and smaller */
 @media (max-width: 480px) {
 
+  #nida{
+   text-align: center;
+    padding-top: 35px;
+  }
   .about{
 
     h1{ font-weight: 900; font-size: 22px;}}
@@ -245,7 +254,7 @@ _::-webkit-full-page-media, _:future, :root .tabs {
     color: white;
     margin-bottom: 3%;
     .nav{
-      text-align: center;margin-bottom: 5%;
+      text-align: left;margin-bottom: 5%;
       li{transition: all 0.3s ;margin-left: 0.9%; display: inline-flex; margin-right: 0.9%; margin-top: 10px; width: 45%; border: 3px solid white; &:hover{ border: 3px solid white}}
 
       li>a{width:100%; img{width: 13px;  -webkit-filter: brightness(55); -moz-filter: brightness(55);
@@ -259,7 +268,7 @@ _::-webkit-full-page-media, _:future, :root .tabs {
     .content{
 
       .img>img{width: 110%;    margin-top: 7%;}
-      .list{padding: 0;color: #6f7d95; list-style: none;li{margin-bottom: 15px; font-size: 12px;}}
+      .list{padding: 0;color: #6f7d95; list-style: none;li{margin-bottom: 15px;margin-top: 20px; font-size: 12px;}}
     }
     .tabs{
       height: 68px;

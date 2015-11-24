@@ -76,7 +76,7 @@
           <li><a href="#"><%= image_tag 'wall.svg' %>&nbsp;&nbsp; Walls</a></li>
           <li><a href="#"><%= image_tag 'bathroom.svg'  %>&nbsp;&nbsp;Bathroom</a></li>
           <li><a href="#"><%= image_tag 'insulator.svg' %>&nbsp;&nbsp;Insulator</a></li>
-          <li><a href="#"><%= image_tag 'kitchen.svg' %>&nbsp;&nbsp;Kitchen</a></li>
+          <li><a href="#"><%= image_tag 'kitchen.svg' %>&nbsp;&nbsp;insulator</a></li>
           <li><a href="#"><%= image_tag 'flooring.svg' %>&nbsp;&nbsp;Floor</a></li>
           <li><a href="#"><%= image_tag 'door.svg'%>&nbsp;&nbsp;Carpenters & Door</a></li>
         </ul>
@@ -89,23 +89,40 @@
 <div class="container info">
   <div class="row">
     <div class="col-sm-12 content">
-      <div class="col-sm-2 col-xs-2 img"><%= image_tag 'arti_logo.png'%></div>
+      <div class="col-sm-2 col-xs-4 img"><%= image_tag 'arti_logo.png'%></div>
       <div class="col-sm-6">
-        <h1 style="margin-top: 0; margin-bottom: 30px;">Artecasa</h1>
-        <div style="display:flex; display:-webkit-box">
+        <h1 id="nida" style="">Artecasa</h1>
+        <div class="hidden-xs" style="display:flex;">
           <ul class="list">
-            <li><%= fa_icon "map-marker" %>&nbsp; Shuwaikh industrrial area, Kuwait</li>
-            <li><%= fa_icon "phone" %>&nbsp; (+965)24848000</li>
+            <li><%= fa_icon "map-marker" %>&nbsp; Shuwaikh industrial area, Kuwait</li>
+            <li><%= fa_icon "phone" %>&nbsp; (+965) 24848000</li>
             <li><%= fa_icon "envelope" %>&nbsp; info@artecasa.bz</li>
           </ul>
 
           <ul class="list" style="margin-left: 8%;">
             <li><%= fa_icon "tag" %>&nbsp; owns 6 products</li>
-            <li><%= fa_icon "picture-o" %>&nbsp; 12 services</li>
+            <li><%= fa_icon "briefcase" %>&nbsp; 12 services</li>
             <li><%= fa_icon "star" %>&nbsp; 8 reviews</li>
 
           </ul>
         </div>
+
+        <div id="majo" class="visible-xs"  style="display:run-in; width: 100%; flex-wrap: wrap;margin-top: 55px; margin-bottom:20px;text-align: center;">
+          <ul class="list">
+            <li><%= fa_icon "map-marker" %>&nbsp; Shuwaikh industrial area, Kuwait</li>
+            <li><%= fa_icon "phone" %>&nbsp; (+965) 24848000</li>
+            <li><%= fa_icon "envelope" %>&nbsp; info@artecasa.bz</li>
+          </ul>
+
+          <ul class="list" style="margin-left: 0%;">
+            <li><%= fa_icon "tag" %>&nbsp; owns 6 products</li>
+            <li><%= fa_icon "briefcase" %>&nbsp; 12 services</li>
+            <li><%= fa_icon "star" %>&nbsp; 8 reviews</li>
+
+          </ul>
+        </div>
+
+
       </div>
     </div>
 

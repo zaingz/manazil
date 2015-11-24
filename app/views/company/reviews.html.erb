@@ -1,53 +1,22 @@
 <%= render 'company/common_top', active:4 %>
 <% content_for :title, "Artecasa Reviews" %>
-
+<%= render 'home/top_banner', title: 'Latest Reviews'%>
 <div class="container reviews">
 
+  <div onclick="owl.trigger('owl.prev');" class="greeno visible-md visible-lg" style="    position: relative;
+          top: 260px;
+          cursor: pointer;
+          left: -45px;" class="arow"> <%= fa_icon 'chevron-left 2x'%> </div>
   <div class="row latest">
     <div class="col-sm-4 col-xs-12">
-      <h2><%= image_tag 'Bars.svg', class: 'baro'%>Latest Reviews</h2>
+
+
       <p></p>
 
     </div>
     <div  class="col-sm-12 r_imgs">
       <div id="owl-demo" style="margin-top: 20px;">
-      <%6.times do%>
-        <div  class="col-sm-3 review owl-item">
-          <div>
-            <img src="http://apartmentluxe.com/main/wp-content/uploads/2012/04/E51st_10D-1.jpg" class="img img-circle">
-          </div>
-          <div class="r_info" style="padding-top: 20px;">
-            <div class="left">
-            <%= image_tag 'jhony.png'%>
-            <div style="display: inline-flex;    position: relative;top: -10px;">
-              <p class="star"><span><%= fa_icon "star"%></span>&nbsp;<span><%= fa_icon "star"%></span>&nbsp;<span><%= fa_icon "star"%></span>&nbsp;<span><%= fa_icon "star"%></span>&nbsp;<span><%= fa_icon "star"%></span></p>
-            </div>
-            <div class="name" style="">
-              <h3 class="greeno">Jhone doe</h3>
-            </div>
-            </div>
-            <div class="well right" style="">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, eos!</p>
-            </div>
-          </div>
-        </div>
-          <%end%>
-      </div>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col-sm-6  col-xs-6" style="padding-right: 20px;"> <div class="line"> </div> </div>
-    <div class="col-sm-6 col-xs-6" style="padding-left: 20px;"> <div class="line"> </div> </div>
-  </div>
-  <div class="row latest">
-    <div class="col-sm-4 col-xs-12">
-      <h2><%= image_tag 'Bars.svg', class: 'baro'%>Trending Reviews</h2>
-      <p></p>
-    </div>
-    <div  class="col-sm-12 r_imgs">
-      <div id="owl-demo2" style="margin-top: 20px;margin-bottom: 20px;">
-        <%6.times do%>
+        <%8.times do%>
             <div  class="col-sm-3 review owl-item">
               <div>
                 <img src="http://apartmentluxe.com/main/wp-content/uploads/2012/04/E51st_10D-1.jpg" class="img img-circle">
@@ -59,7 +28,8 @@
                     <p class="star"><span><%= fa_icon "star"%></span>&nbsp;<span><%= fa_icon "star"%></span>&nbsp;<span><%= fa_icon "star"%></span>&nbsp;<span><%= fa_icon "star"%></span>&nbsp;<span><%= fa_icon "star"%></span></p>
                   </div>
                   <div class="name" style="">
-                    <h3 class="greeno">Jhone doe</h3>
+                    <h3  class="greeno hidden-xs">Jhone doe</h3>
+                    <h3  class="greeno visible-xs">Jhone</h3>
                   </div>
                 </div>
                 <div class="well right" style="">
@@ -70,6 +40,74 @@
         <%end%>
       </div>
     </div>
+
+    <div onclick=" owl.trigger('owl.next');" class="greeno visible-md visible-lg" style=" margin-left: 99.999%;   position: relative;
+            top: -298px;
+            cursor: pointer;
+            ;" class="arow"> <%= fa_icon 'chevron-right 2x'%> </div>
+
   </div>
+
+  <!--<div class="row">
+    <div class="col-sm-6  col-xs-6" style="padding-right: 20px;"> <div class="line"> </div> </div>
+    <div class="col-sm-6 col-xs-6" style="padding-left: 20px;"> <div class="line"> </div> </div>
+  </div>-->
+
+
+</div>
+
+<%= render 'home/top_banner', title: 'Trending Reviews'%>
+<div class="container reviews">
+
+  <div onclick=" owl2.trigger('owl.prev');" class="greeno visible-md visible-lg" style="    position: relative;
+          top: 260px;
+          cursor: pointer;
+          left: -45px;" class="arow"> <%= fa_icon 'chevron-left 2x'%> </div>
+  <div class="row latest">
+    <div class="col-sm-4 col-xs-12">
+
+
+      <p></p>
+
+    </div>
+    <div  class="col-sm-12 r_imgs">
+      <div id="owl-demo2" style="margin-top: 20px;">
+        <%9.times do%>
+            <div  class="col-sm-3 review owl-item">
+              <div>
+                <img src="http://apartmentluxe.com/main/wp-content/uploads/2012/04/E51st_10D-1.jpg" class="img img-circle">
+              </div>
+              <div class="r_info" style="padding-top: 20px;">
+                <div class="left">
+                  <%= image_tag 'jhony.png'%>
+                  <div style="display: inline-flex;    position: relative;top: -10px;">
+                    <p class="star"><span><%= fa_icon "star"%></span>&nbsp;<span><%= fa_icon "star"%></span>&nbsp;<span><%= fa_icon "star"%></span>&nbsp;<span><%= fa_icon "star"%></span>&nbsp;<span><%= fa_icon "star"%></span></p>
+                  </div>
+                  <div class="name" style="">
+                    <h3  class="greeno hidden-xs">Jhone doe</h3>
+                    <h3  class="greeno visible-xs">Jhone</h3>
+                  </div>
+                </div>
+                <div class="well right" style="">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, eos!</p>
+                </div>
+              </div>
+            </div>
+        <%end%>
+      </div>
+    </div>
+
+    <div onclick=" owl2.trigger('owl.next');" class="greeno" style=" margin-left: 99.999%;   position: relative;
+            top: -298px;
+            cursor: pointer;
+           ;" class="arow visible-md visible-lg"> <%= fa_icon 'chevron-right 2x'%> </div>
+
+  </div>
+
+  <!--<div class="row">
+    <div class="col-sm-6  col-xs-6" style="padding-right: 20px;"> <div class="line"> </div> </div>
+    <div class="col-sm-6 col-xs-6" style="padding-left: 20px;"> <div class="line"> </div> </div>
+  </div>-->
+
 
 </div>
