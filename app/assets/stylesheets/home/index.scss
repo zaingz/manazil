@@ -176,6 +176,12 @@
 
 /* Portrait phones and smaller */
 @media (max-width: 480px) {
+  .top_banner{
+    width: 100%;
+    background-color: $green-color;
+    padding-top: 23px;
+    .line{background-color: white; height: 1px;}
+  }
   .about{
 
     h1{ font-weight: 900; font-size: 22px;}}
