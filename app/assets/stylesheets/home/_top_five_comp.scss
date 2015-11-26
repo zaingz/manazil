@@ -6,6 +6,7 @@
     .roundo {
       width: 290px;
       height: 290px;
+      text-align: right;
     }
   }
   .sideo{
@@ -17,4 +18,107 @@
 
   .line{height: 2px; background-color: $green-color;}
 
+}
+
+
+
+
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+
+}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+  .h-company{
+
+    margin-top: 30px;
+
+    .imgeo{
+      .roundo {
+        width: 230px;
+        height: 230px;
+      }
+    }
+    .sideo{
+      color:white;
+      margin-top:10px;
+      border-radius: 2px ;
+      background-color: $green-color;
+    }
+
+    .line{height: 2px; background-color: $green-color; display: none;}
+
+  }
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+  .h-company{
+
+    margin-top: 30px;
+
+    .imgeo{
+      text-align: center !important;
+      .roundo {
+        width: 180px;
+        height: 180px;
+      }
+    }
+    .sideo{
+      color:white;
+      margin-top:10px;
+      border-radius: 2px ;
+      background-color: $green-color;
+      margin-top: 30px;
+      h2{margin-top: 20px !important;}
+      p{margin-top: 20px !important;}
+      button{margin-top: 15px !important; margin-bottom: 20px!important;}
+    }
+
+    .line{height: 2px; background-color: $green-color; display: none;}
+  #mastana{
+    top: 120px !important;
+  }
+  }
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+  .h-company{
+
+    margin-top: 30px;
+
+    .imgeo{
+      text-align: center !important;
+      h1{font-size: 20px;}
+      .roundo {
+        width: 100px;
+        height: 100px;
+      }
+    }
+    .sideo{
+      color:white;
+      margin-top:10px;
+      border-radius: 2px ;
+      background-color: $green-color;
+      margin-top: 30px;
+
+      h2{margin-top: 20px !important; font-size: 24px;}
+      p{margin-top: 20px !important;}
+      button{margin-top: 15px !important; margin-bottom: 20px!important; padding: 10px 15px 10px 15px; font-size: 15px }
+    }
+
+    .line{height: 2px; background-color: $green-color; display: none;}
+    #mastana{
+      top: 60px !important;
+      padding-left: 0;
+      div{width: 100% !important;}
+    }
+  }
 }

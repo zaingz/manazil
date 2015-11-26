@@ -9,14 +9,14 @@
 
   <div class="row">
 
-    <div class="col-sm-4 imgeo ">
+    <div class="col-sm-4 col-xs-6 imgeo ">
 
-      <h1 class="greeno" style="margin-bottom: 20px;"><%= image_tag 'Bars.svg', class: 'baro'%><%= i+=1%>: &nbsp;Artecasa</h1>
+      <h1 class="greeno" style="margin-bottom: 20px;"><%= image_tag 'Bars.svg', class: 'baro hidden-xs'%><%= i+=1%>: &nbsp;Artecasa</h1>
 
-      <%= image_tag "home.jpg", class: 'img img-circle pull-right roundo' %>
+      <%= image_tag "home.jpg", class: 'img img-circle  roundo' %>
     </div>
 
-    <div class="col-sm-4 greeno"  style="position: relative; top: 180px;">
+    <div id="mastana" class="col-sm-4 col-xs-6  greeno"  style="position: relative; top: 180px;">
 
       <div style="display: inline-flex"><p style="width: 140px;">Quality:</p>
 
@@ -50,20 +50,23 @@
 
     </div>
 
-     <div class="col-sm-3 col-sm-offset-1 sideo text-center" >
+     <div class="col-sm-3 col-sm-offset-1 col-xs-12 sideo text-center" >
 
       <h2 style="margin-top: 60px;">Want to know more?</h2>
       <p style="margin-top: 50px;">See what people had to say</p>
-      <button style="margin-top: 50px;margin-bottom: 40px;" class="btn btn-lg btn-default">Click Here</button>
+      <button style="margin-top: 50px;margin-bottom: 40px;" class="btn btn-lg btn-default" onclick="run()">Click Here</button>
 
     </div>
 
+    <script>
+      function run(){window.location.href = "/company/index";}
+    </script>
 
 
 
   </div>
 
-  <div class="row" style="margin-top: 30px; margin-bottom: 30px;">
+  <div class="row hidden-xs hidden-sm" style="margin-top: 30px; margin-bottom: 30px;">
     <div class="col-sm-6">
       <div class="line"></div>
     </div>

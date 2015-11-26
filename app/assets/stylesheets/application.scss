@@ -81,6 +81,28 @@ a:focus{background-color: transparent!important;}
 
 .form-control{border: 1px solid $green-color}
 
+@media (min-width: 1380px) {
+
+ .navbar{.container{
+
+
+     width: 100%;
+     padding-left: 7%;
+     padding-right: 7%;}
+ }
+
+  .footer{.container{
+
+
+    width: 100%;
+    padding-left: 7%;
+    padding-right: 7%;}
+  }
+
+
+}
+
+
 @media (max-width: 480px) {
 
   .full_img{

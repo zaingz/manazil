@@ -3,6 +3,7 @@
   margin-bottom: 10px;
   .line{
     margin-top: 10px;
+    margin-bottom: 15px;
     padding: 5px;
     border-bottom: 1px solid #CCC;
     .toggle-text{
@@ -94,7 +95,7 @@
           .summary{font-weight: 100; font-size: 13px; }
           .imga{width: 100%; background-color: #3E4B58; height: 80px;}
           .imga-thumb{ background-color: #3E4B58; height: 95px; width: 110px; margin-right: 20px; }
-          .button{width: 100%; height: 35px; background-color: $green-color; color: white; margin-top: 20px;    padding-top: 7px; font-weight: 700}
+          .button{width: 100%; height: 35px; background-color: $green-color; color: white; margin-top: 0px;position: relative ;top:-20px ;   padding-top: 7px; font-weight: 700}
           .map{width:100%; height: 200px;  background-color: #3E4B58; }
 
         }
@@ -112,6 +113,7 @@
     margin-bottom: 30px;
     .line{
       margin-top: 10px;
+      margin-bottom: 0px;
       padding: 05px;
       padding-bottom: 23px;
       border-bottom: 1px solid #CCC;
@@ -126,7 +128,7 @@
           .imga{width: 100%; background-color: #3E4B58; height: 80px;}
           .imga-thumb{ background-color: #3E4B58; height: 70px; width: 110px; margin-right: 20px;
             .radio{ position: relative;top: 50px;left: 42%;}}
-          .button{width: 100%; height: 50px !important; background-color: $green-color; color: white; margin-top: 10px;    padding-top: 15px; font-weight: 700}
+          .button{width: 100%; height: 50px !important; background-color: $green-color; color: white; margin-top: 00px; margin-bottom: -30px;   padding-top: 15px; font-weight: 700}
           .map{width:100%; height: 200px;  background-color: #3E4B58; }
 
         }
