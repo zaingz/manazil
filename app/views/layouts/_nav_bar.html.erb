@@ -163,19 +163,56 @@
         <%= image_tag 'Manazil logo.svg', class: 'mobo-logo' %>
     </div>
     <div class="col-xs-4 text-right">
-      <span id="right-hamburger" class="hambergur"><%= fa_icon 'bars'%></span>
+      <span id="right-hamburger" class="hambergur"><%= image_tag 'user.png', id:'sex' %></span>
     </div>
   </div>
+
+  <style>
+    #sex{filter: brightness(100); -webkit-filter: brightness(100);}
+  </style>
 
 </nav>
 
 <nav style="display: none" id="l-menu" class="left-menu ">
   <div class=container-fluid>
-        <div class="col-xs-8 col-xs-offset-2 icon-box">
-          <div class="col-xs-4 text-center"><a href="#"><%= image_tag 'search.png' %></a></div>
-          <div class="col-xs-4 text-center"><a href="#"><%= image_tag 'user.png' %></a></div>
-          <div class="col-xs-4 text-center"><a href="#"><%= image_tag 'key.png' %></a></div>
+        <div class="col-xs-12 col-xs-offset-0 icon-box">
+          <div  id="login-signup-box9">
+            <div class="btn-wrapper">
+              <div class="top-btn login">
+                Login
+              </div>
+              <div class="top-btn signup">
+                Signup
+              </div>
+            </div>
+            <!-- end of button wrapper-->
+            <form>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+              </div>
 
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox"> Remember password
+                </label>
+              </div>
+
+              <div class="form-group">
+                <p for="exampleInputPassword1" class="text-muted">Forgot your password?</p>
+              </div>
+
+              <div class="btn-box">
+                <button type="submit" class="btn btn-default text-center">Login</button>
+              </div>
+            </form>
+
+
+          </div>
         </div>
   </div>
 

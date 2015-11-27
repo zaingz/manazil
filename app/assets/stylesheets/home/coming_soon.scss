@@ -1,0 +1,12 @@
+.comming_soon{
+  margin-top: 50px;
+  margin-bottom: 5%;
+  .logo-box{
+    #sooner{
+      width: 140px;
+    }
+  }
+  h2{margin-bottom: 7%;}
+  input{border-radius: 1px;height: 45px; margin-bottom: 6%;}
+  .button{width: 40%; height: 40px; background-color: $green-color; color: white;     margin: 0 auto;    padding-top: 10px; font-weight: 700}
+}

@@ -1,0 +1,132 @@
+<%= render 'home/top_banner', title: 'Todo List'%>
+<% content_for :title, "Todo List" %>
+
+<div class="container rules">
+  <div class="row">
+
+    <% array = [
+
+            "Today",
+            "      Tommorow                                ","Upcoming"
+
+
+
+
+    ]%>
+
+    <%3.times do |i|%>
+
+        <div class=" line col-xs-12">
+
+          <div class="text col-xs-11"><b><%= array[i]%></b></div>
+          <div class="toggle col-xs-1 text-center">
+            <a style="color: #3E4B58" role="button" data-toggle="collapse" href="<%= "#collapseExample#{i}" %>" aria-expanded="false" aria-controls="collapseExample">
+              <%= fa_icon 'caret-down'%>
+            </a>
+          </div>
+
+          <div class="col-xs-12 ">
+            <div class="collapse" id="<%= "collapseExample#{i}" %>">
+              <div class="toggle-text">
+
+                <table class="table">
+
+                  <tr class="text-center">
+                    <th>Tittle</th>
+                    <th>Description</th>
+                    <th>Date<th>
+                  </tr>
+                  <tr>
+                    <td>Pick grocery</td>
+                    <td>Visit the local market and get fresh veggies and some soya sauce</td>
+                    <td>19 Dec</td>
+
+                  </tr>
+
+
+                </table>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+    <%end%>
+
+
+
+
+
+  </div>
+
+
+
+
+
+
+
+  <div style="display: none" id="todo-form" class="row">
+    <div class="col-sm-12 write-comments9">
+
+
+
+      <div class="col-sm-12 form-line">
+
+        <form class="form-horizontal">
+          <div class="form-group">
+            <label for="inputEmail3" class="col-sm-2 control-label" style="text-align: left">TITLE<span class="text-danger">&nbsp;*</span></label>
+            <div class="col-sm-6">
+              <input type="email" class="form-control" id="inputEmail3" placeholder="Name">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputEmail3" class="col-sm-2 control-label" style="text-align: left">DATE<span class="text-danger">&nbsp;*</span></label>
+            <div class="col-sm-6">
+              <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputEmail3" class="col-sm-2 control-label" style="text-align: left">TIME</label>
+            <div class="col-sm-6">
+              <input type="email" class="form-control" id="inputEmail3" placeholder="Website">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputEmail3" class="col-sm-2 control-label" style="text-align: left">DESCRIPTION<span class="text-danger">&nbsp;*</span></label>
+            <div class="col-sm-6">
+              <textarea type="text" class="form-control" id="inputEmail3" placeholder="COMMENT"></textarea>
+            </div>
+          </div>
+
+
+
+
+
+
+
+
+
+        </form>
+
+
+
+      </div>
+
+
+    </div>
+  </div>
+
+
+
+  <div class="row">
+    <div class="form-group">
+
+      <div class="col-sm-2 col-sm-offset-0 col-xs-8 col-xs-offset-2" style="padding: 0;    margin-top:2%;">
+
+        <div id="fuck-btn" class=" text-center">ADD TODO</div>
+      </div>
+    </div>
+  </div>
+
+</div>

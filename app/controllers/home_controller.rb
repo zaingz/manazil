@@ -59,4 +59,16 @@ class HomeController < ApplicationController
 
   end
 
+  def coming_soon
+
+  end
+
+  def todo_list
+
+  end
+
+  def calendar
+
+  end
+
 end
