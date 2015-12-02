@@ -163,12 +163,14 @@
         <%= image_tag 'Manazil logo.svg', class: 'mobo-logo' %>
     </div>
     <div class="col-xs-4 text-right">
-      <span id="right-hamburger" class="hambergur"><%= image_tag 'user.png', id:'sex' %></span>
+      <span class="search hambergur"><%= image_tag 'search.png', class:'sex', id: 'sercho' %></span>
+      <span id="right-hamburger" class="hambergur"><%= image_tag 'user.png', class:'sex' %></span>
     </div>
   </div>
 
   <style>
-    #sex{filter: brightness(100); -webkit-filter: brightness(100);}
+    .sex{filter: brightness(100); -webkit-filter: brightness(100);}
+          .search{margin-right: 10px;}
   </style>
 
 </nav>
@@ -217,6 +219,19 @@
   </div>
 
 </nav>
+
+
+<div style="display: none" class="right-menu" id="search-drop">
+
+  <form>
+    <div style="margin-top: 8.5%; padding: 10px;" class="form-group">
+
+      <input type="text" class="form-control input-lg" id="exampleInputEmail1" placeholder="Search">
+    </div>
+  </form>
+
+</div>
+
 
 <nav style="display: none" id="r-menu" class="right-menu ">
   <div class=container-fluid>

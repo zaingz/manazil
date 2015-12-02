@@ -10,6 +10,9 @@ $(document).on('page:load', function(){
     $('#login-signup-box2').slideUp(1);
     $('#signup-modal-trigger').click(function(){ $('#login-signup-box2').slideToggle(300); $('#login-signup-box').slideUp(1);});
 
+    $('#search-drop').slideUp(1);
+    $("#sercho").click(function(){console.log('click'); $("#search-drop").slideToggle()});
+
 });
 
 $( document ).ready(function() {
@@ -33,6 +36,8 @@ $( document ).ready(function() {
     $("#left-hamburger").click(function(){console.log('click'); $("#r-menu").slideToggle()});
 
 
+    $('#search-drop').slideUp(1);
+    $("#sercho").click(function(){console.log('click'); $("#search-drop").slideToggle()});
 
     $(window).resize(function(){
 
