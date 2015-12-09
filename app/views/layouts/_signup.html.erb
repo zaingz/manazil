@@ -1,14 +1,14 @@
 <div style="display: none" id="login-signup-box2">
   <div class="btn-wrapper">
-    <div class="top-btn login">
+    <div id="login-toggle" class="top-btn login">
       Login
     </div>
-    <div class="top-btn signup">
+    <div id="signup-toggle" class="top-btn signup">
       Signup
     </div>
   </div>
   <!-- end of button wrapper-->
-  <form>
+  <form class="signup-box" >
     <div class="form-group">
       <label for="exampleInputEmail1">Email address</label>
       <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
@@ -33,6 +33,33 @@
       <button type="submit" class="btn btn-default text-center">Register</button>
     </div>
   </form>
+
+
+  <form class="signin-box" style="display:none">
+    <div class="form-group">
+      <label for="exampleInputEmail1">Email address</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+    </div>
+    <div class="form-group">
+      <label for="exampleInputPassword1">Password</label>
+      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+    </div>
+
+    <div class="checkbox">
+      <label>
+        <input type="checkbox"> Remember password
+      </label>
+    </div>
+
+    <div class="form-group">
+      <p for="exampleInputPassword1" class="text-muted">Forgot your password?</p>
+    </div>
+
+    <div class="btn-box">
+      <button type="submit" class="btn btn-default text-center">Login</button>
+    </div>
+  </form>
+
 
 
 </div>

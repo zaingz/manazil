@@ -13,5 +13,6 @@
 
 
     .tab{margin-top: 5%;margin-bottom: 5%; padding-top: 0%; ;.button{font-weight: 700;color: $green-color;cursor: pointer; border: 2px solid $green-color;padding: 10px;padding-left: 20px; padding-right: 20px;font-size: 14px; &:hover{background-color: $green-color;color:white}}}
+    .activet{background-color: $green-color;.button{color:white !important;}}
   }
 }

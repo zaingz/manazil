@@ -28,6 +28,7 @@ Rails.application.routes.draw do
   get '/user_home' => 'home#user_welcome'
   get '/coming_soon' => 'home#coming_soon'
   get '/todo' => 'home#todo_list'
+  get '/add_todo' => 'home#add_todo'
   get '/calendar' => 'home#calendar'
 
 

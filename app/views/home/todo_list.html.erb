@@ -1,20 +1,59 @@
 <%= render 'home/top_banner', title: 'Todo List'%>
 <% content_for :title, "Todo List" %>
 
-<div class="container rules">
+
+
+
+<div class="container calendar">
+  <div class="row">
+    <div class="col-xs-12">
+      <div id="fuck-nav">
+        <div class="col-sm-4 tab text-center"><div onclick="lunsuck1()" class="button">CALENDAR</div> </div>
+        <div class="col-sm-4 activet tab text-center"><div onclick="lunsuck2()" class="button">TODO</div></div>
+        <div class="col-sm-4 tab text-center"><div onclick="lunsuck3()" class="button">ADD TO LIST</div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+    function lunsuck1(){
+        window.location.href = "/calendar";
+    }
+    function lunsuck2(){
+        window.location.href = "/todo";
+    }
+    function lunsuck3(){
+        window.location.href = "/add_todo";
+    }
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container rules" style="top: -30px; position: relative;">
   <div class="row">
 
     <% array = [
 
-            "Today",
-            "      Tommorow                                ","Upcoming"
-
+           "Upcoming"
 
 
 
     ]%>
 
-    <%3.times do |i|%>
+    <%1.times do |i|%>
 
         <div class=" line col-xs-12">
 
@@ -66,67 +105,9 @@
 
 
 
-  <div style="display: none" id="todo-form" class="row">
-    <div class="col-sm-12 write-comments9">
-
-
-
-      <div class="col-sm-12 form-line">
-
-        <form class="form-horizontal">
-          <div class="form-group">
-            <label for="inputEmail3" class="col-sm-2 control-label" style="text-align: left">TITLE<span class="text-danger">&nbsp;*</span></label>
-            <div class="col-sm-6">
-              <input type="email" class="form-control" id="inputEmail3" placeholder="Name">
-            </div>
-          </div>
-          <div class="form-group">
-            <label for="inputEmail3" class="col-sm-2 control-label" style="text-align: left">DATE<span class="text-danger">&nbsp;*</span></label>
-            <div class="col-sm-6">
-              <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
-            </div>
-          </div>
-          <div class="form-group">
-            <label for="inputEmail3" class="col-sm-2 control-label" style="text-align: left">TIME</label>
-            <div class="col-sm-6">
-              <input type="email" class="form-control" id="inputEmail3" placeholder="Website">
-            </div>
-          </div>
-          <div class="form-group">
-            <label for="inputEmail3" class="col-sm-2 control-label" style="text-align: left">DESCRIPTION<span class="text-danger">&nbsp;*</span></label>
-            <div class="col-sm-6">
-              <textarea type="text" class="form-control" id="inputEmail3" placeholder="COMMENT"></textarea>
-            </div>
-          </div>
 
 
 
 
-
-
-
-
-
-        </form>
-
-
-
-      </div>
-
-
-    </div>
-  </div>
-
-
-
-  <div class="row">
-    <div class="form-group">
-
-      <div class="col-sm-2 col-sm-offset-0 col-xs-8 col-xs-offset-2" style="padding: 0;    margin-top:2%;">
-
-        <div id="fuck-btn" class=" text-center">ADD TODO</div>
-      </div>
-    </div>
-  </div>
 
 </div>

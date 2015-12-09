@@ -141,7 +141,7 @@
       <ul class="nav navbar-nav navbar-right" id="nav-links-right">
         <li><a href="#"><%= image_tag 'search.png' %></a></li>
         <li><a id="signup-modal-trigger" href="#"><%= image_tag 'user.png' %></a></li>
-        <li><a id="login-modal-trigger" href="#"><%= image_tag 'key.png' %></a></li>
+       <!-- <li><a id="login-modal-trigger" href="#"><%= image_tag 'key.png' %></a></li>-->
         <li><a class="greeno" id="signup-modal-trigger" href="#">العربية</a></li>
 
         <%= render 'layouts/login'%>
@@ -181,15 +181,42 @@
         <div class="col-xs-12 col-xs-offset-0 icon-box">
           <div  id="login-signup-box9">
             <div class="btn-wrapper">
-              <div class="top-btn login">
+              <div id="m-log" class="top-btn login">
                 Login
               </div>
-              <div class="top-btn signup">
+              <div id="m-sign" class="top-btn signup">
                 Signup
               </div>
             </div>
             <!-- end of button wrapper-->
-            <form>
+            <form style="display: none" class="signup-box" >
+              <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Re-Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="">
+              </div>
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox"> Send me daily Newsletter
+                </label>
+              </div>
+
+
+
+              <div class="btn-box">
+                <button type="submit" class="btn btn-default text-center">Register</button>
+              </div>
+            </form>
+
+
+            <form class="signin-box" >
               <div class="form-group">
                 <label for="exampleInputEmail1">Email address</label>
                 <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
@@ -213,6 +240,7 @@
                 <button type="submit" class="btn btn-default text-center">Login</button>
               </div>
             </form>
+
 
 
           </div>

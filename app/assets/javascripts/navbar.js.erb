@@ -39,6 +39,50 @@ $( document ).ready(function() {
     $('#search-drop').slideUp(1);
     $("#sercho").click(function(){console.log('click'); $("#search-drop").slideToggle()});
 
+    $("#signup-toggle").css("background-color", "#799a30");
+
+    $('#login-toggle').click(function(){
+        $('.signup-box').hide();
+        $('.signin-box').show();
+        $(this).css("background-color", "#799a30");
+        $("#signup-toggle").css("background-color", "#60615F");
+
+    });
+
+    $('#signup-toggle').click(function(){
+        $('.signup-box').show();
+        $('.signin-box').hide();
+        $(this).css("background-color", "#799a30");
+        $("#login-toggle").css("background-color", "#60615F ");
+
+
+    });
+
+    $("#m-log").css("background-color", "#799a30 ");
+
+
+    $('#m-log').click(function(){
+        $('.signup-box').hide();
+        $('.signin-box').show();
+        $(this).css("background-color", "#799a30");
+        $("#m-sign").css("background-color", "#60615F");
+
+    });
+
+    $('#m-sign').click(function(){
+        $('.signup-box').show();
+        $('.signin-box').hide();
+        $(this).css("background-color", "#799a30");
+        $("#m-log").css("background-color", "#60615F ");
+
+
+    });
+
+
+
+
+
+
     $(window).resize(function(){
 
         if ($(window).width() <= 767) {

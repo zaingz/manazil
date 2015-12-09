@@ -71,4 +71,8 @@ class HomeController < ApplicationController
 
   end
 
+  def add_todo
+
+  end
+
 end

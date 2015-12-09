@@ -1,0 +1,120 @@
+<%= render 'home/top_banner', title: 'Add to List'%>
+<% content_for :title, "Add to List" %>
+
+
+
+
+
+<div class="container calendar">
+  <div class="row">
+    <div class="col-xs-12">
+      <div id="fuck-nav">
+        <div class="col-sm-4 tab text-center"><div onclick="lunsuck1()" class="button">CALENDAR</div> </div>
+        <div class="col-sm-4 tab text-center"><div onclick="lunsuck2()" class="button">TODO</div></div>
+        <div class="col-sm-4 activet tab text-center"><div onclick="lunsuck3()" class="button">ADD TO LIST</div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+    function lunsuck1(){
+        window.location.href = "/calendar";
+    }
+    function lunsuck2(){
+        window.location.href = "/todo";
+    }
+    function lunsuck3(){
+        window.location.href = "/add_todo";
+    }
+
+</script>
+
+
+<div class="container">
+
+<div style="display: none;    top: -20px;
+        position: relative;" id="todo-form" class="row">
+  <div class="col-sm-12 write-comments9">
+
+
+
+    <div class="col-sm-12 form-line">
+
+      <form class="form-horizontal">
+        <div class="form-group">
+          <label for="inputEmail3" class="col-sm-2 control-label" style="text-align: left">TITLE<span class="text-danger">&nbsp;*</span></label>
+          <div class="col-sm-6">
+            <input type="email" class="form-control" id="inputEmail3" placeholder="Name">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="inputEmail3" class="col-sm-2 control-label" style="text-align: left">LOCATION<span class="text-danger">&nbsp;*</span></label>
+          <div class="col-sm-6">
+            <input type="email" class="form-control" id="inputEmail3" placeholder="Location">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="inputEmail3"  class="col-sm-2 control-label" style="text-align: left">START TIME</label>
+          <div class="col-sm-6">
+            <input id="startT" class="form-control startT" id="inputEmail3" placeholder="">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="inputEmail3"  class="col-sm-2 control-label" style="text-align: left">END TIME</label>
+          <div class="col-sm-6">
+            <input type="email" id="endT" class="form-control" id="inputEmail3" placeholder="">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="inputEmail3" class="col-sm-2 control-label" style="text-align: left">DESCRIPTION<span class="text-danger">&nbsp;*</span></label>
+          <div class="col-sm-6">
+            <textarea type="text" class="form-control" id="inputEmail3" placeholder="COMMENT"></textarea>
+          </div>
+        </div>
+
+
+
+        <script type="text/javascript">
+            $(function () {
+                $('.startT').clockpicker({
+                    placement: 'bottom',
+                    align: 'left',
+                    donetext: 'Done'
+                });
+
+
+                $('#endT').clockpicker({
+                    placement: 'bottom',
+                    align: 'left',
+                    donetext: 'Done'
+                });
+
+            });
+        </script>
+
+
+
+
+
+      </form>
+
+
+
+    </div>
+
+
+  </div>
+</div>
+
+  <div class="row">
+    <div class="form-group">
+
+      <div class="col-sm-2 col-sm-offset-0 col-xs-8 col-xs-offset-2" style="padding: 0;    margin-top:2%; margin-bottom: 25px;">
+
+        <div id="fuck-btn" class=" text-center">ADD TODO</div>
+      </div>
+    </div>
+  </div>
+
+</div>
