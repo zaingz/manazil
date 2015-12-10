@@ -28,12 +28,12 @@ $( document ).ready(function() {
 
     //for login icons
     $('#l-menu').slideUp(1);
-    $("#right-hamburger").click(function(){console.log('click'); $("#l-menu").slideToggle()});
+    $("#right-hamburger").click(function(){console.log('click'); $("#l-menu").slideToggle(); $('#r-menu').hide(1);});
 
 
     //for nav links
     $('#r-menu').slideUp(1);
-    $("#left-hamburger").click(function(){console.log('click'); $("#r-menu").slideToggle()});
+    $("#left-hamburger").click(function(){console.log('click'); $("#r-menu").slideToggle();$("#l-menu").hide(1); });
 
 
     $('#search-drop').slideUp(1);
@@ -100,6 +100,9 @@ $( document ).ready(function() {
             var path = "<%= image_path('Manazil logo 2.svg')%>";
 
             $("#imigo").attr("src",path);
+            $("#r-menu").hide(1);
+            $("l-menu").hide(1);
+            console.log("time to launch");
 
         }
 
